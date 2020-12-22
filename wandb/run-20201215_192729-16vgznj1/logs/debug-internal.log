@@ -1,0 +1,309 @@
+2020-12-15 19:27:29,661 INFO    MainThread:27464 [internal.py:wandb_internal():63] W&B internal server running at pid: 27464
+2020-12-15 19:27:29,664 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: check_version
+2020-12-15 19:27:29,664 INFO    WriterThread:27464 [datastore.py:open_for_write():76] open: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/run-16vgznj1.wandb
+2020-12-15 19:27:29,666 DEBUG   SenderThread:27464 [sender.py:send():90] send: header
+2020-12-15 19:27:29,666 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:27:29,666 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: check_version
+2020-12-15 19:27:29,670 DEBUG   Thread-4  :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-15 19:27:29,809 DEBUG   Thread-4  :27464 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-15 19:27:29,856 DEBUG   SenderThread:27464 [sender.py:send():90] send: run
+2020-12-15 19:27:29,857 DEBUG   SenderThread:27464 [git.py:repo():30] git repository is invalid
+2020-12-15 19:27:29,863 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:27:30,240 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:27:30,245 INFO    SenderThread:27464 [dir_watcher.py:__init__():165] watching files in: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files
+2020-12-15 19:27:30,245 INFO    SenderThread:27464 [sender.py:_start_run_threads():490] run started: 16vgznj1 with start time 1608028049
+2020-12-15 19:27:30,245 DEBUG   SenderThread:27464 [sender.py:send():90] send: summary
+2020-12-15 19:27:30,245 INFO    SenderThread:27464 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-15 19:27:30,245 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: run_start
+2020-12-15 19:27:30,256 DEBUG   HandlerThread:27464 [git.py:repo():30] git repository is invalid
+2020-12-15 19:27:30,298 DEBUG   SenderThread:27464 [sender.py:send():90] send: files
+2020-12-15 19:27:30,298 INFO    SenderThread:27464 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-12-15 19:27:30,303 DEBUG   Thread-11 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:27:30,304 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:27:30,304 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:27:30,304 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:27:30,308 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:27:30,646 DEBUG   Thread-11 :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:27:30,650 DEBUG   Thread-11 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 19:27:30,652 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:27:31,247 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_created():213] file/dir created: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/wandb-metadata.json
+2020-12-15 19:27:31,247 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_created():213] file/dir created: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:27:31,248 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_created():213] file/dir created: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/requirements.txt
+2020-12-15 19:27:32,248 DEBUG   Thread-5  :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:27:32,603 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:33,724 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:27:35,995 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:38,262 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:27:38,511 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:42,787 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:27:43,057 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:45,654 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:27:45,654 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:27:45,654 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:27:45,656 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:27:46,085 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:27:47,292 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:27:47,564 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:51,829 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:27:52,078 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:55,101 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:27:55,261 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:27:56,321 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:27:58,557 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:00,841 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:01,089 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:28:01,089 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:28:01,089 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:28:01,092 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:28:01,107 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:01,443 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:28:05,332 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:05,583 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:09,856 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:10,126 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:14,350 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:14,614 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:16,447 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:28:16,447 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:28:16,448 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:28:16,452 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:28:16,782 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:28:17,816 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:18,268 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:28:18,864 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:21,116 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:23,371 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:23,629 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:27,867 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:28,125 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:31,784 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:28:31,784 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:28:31,784 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:28:31,786 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:28:32,351 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:28:32,370 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:36,866 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:40,102 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:40,285 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:28:41,352 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:45,844 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:47,354 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:28:47,354 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:28:47,354 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:28:47,358 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:28:47,791 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:28:50,358 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:50,603 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:28:54,859 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:28:59,371 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:02,300 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:29:02,452 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:29:02,795 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:29:02,795 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:29:02,795 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:29:02,798 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:29:03,133 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:29:03,881 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:08,377 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:12,866 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:13,123 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:29:17,379 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:18,136 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:29:18,136 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:29:18,136 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:29:18,138 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:29:18,492 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:29:21,899 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:24,327 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:29:24,518 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:29:26,400 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:30,916 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:33,497 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:29:33,498 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:29:33,498 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:29:33,501 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:29:33,935 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:29:35,422 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:35,755 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:29:39,928 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:44,425 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:46,343 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:29:46,380 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:29:48,916 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:48,939 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:29:48,939 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:29:48,940 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:29:48,943 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:29:49,409 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:29:53,413 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:57,915 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:29:58,176 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:30:02,426 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:04,412 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:30:04,412 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:30:04,412 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:30:04,414 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:30:04,747 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:30:06,936 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:08,355 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:30:08,584 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:30:11,427 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:15,925 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:19,752 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:30:19,752 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:30:19,752 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:30:19,756 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:30:20,099 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:30:20,426 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:20,691 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:30:24,933 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:29,438 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:30,712 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:30:31,375 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:30:33,928 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:35,102 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:30:35,103 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:30:35,108 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:30:35,112 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:30:35,449 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:30:38,438 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:42,952 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:43,199 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:30:47,483 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:50,451 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:30:50,451 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:30:50,451 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:30:50,455 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:30:50,793 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:30:51,992 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:30:53,390 INFO    Thread-8  :27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:30:53,418 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:30:56,505 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:31:01,027 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:31:05,524 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:31:05,779 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:31:05,803 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: status
+2020-12-15 19:31:05,803 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:05,803 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: status
+2020-12-15 19:31:05,806 DEBUG   SenderThread:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:31:06,137 DEBUG   SenderThread:27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:31:10,027 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:31:13,056 ERROR   Thread-11 :27464 [internal_api.py:upload_file():1212] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/kdh93429/DeepMimicTorch/16vgznj1/wandb-metadata.json?Expires=1608114450&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=CWDXvtZeZ%2FKwhAxxx8EYZfDEelNt%2FI0kbelRYKcVrVbUE65DxKSJQStxUje17MQLHWJ7DuNF2Mqod8bjnxuOPbchrGpaM%2B9yxSh%2Ftdz8N7CCXL2vMKleo81zMvexuTrZ7ZHF%2BLPrlicBmC3R%2BxjAyKpWtDCv14O6aB4KsVIQ0J7QielV%2B6N2RiFtEhP2CsCAhTAVwhADhvwaFht9jecK4FbrblgJMG4qVUqxQvHJt%2BbxEeDfgde1Sl%2B%2FIVma2y0x2xpmVR9ThVT6dexymf2IjOmkaQ7e0mSm3QG1R1elqvX22yGe5HjBhYZ2ppZJrCPWInBvLIS0WdzVEA3N%2BnmVqg%3D%3D ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2020-12-15 19:31:13,058 DEBUG   raven-sentry.BackgroundWorker:27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2020-12-15 19:31:14,039 DEBUG   raven-sentry.BackgroundWorker:27464 [connectionpool.py:_make_request():461] https://o151352.ingest.sentry.io:443 "POST /api/5288891/store/ HTTP/1.1" 200 41
+2020-12-15 19:31:14,183 DEBUG   Thread-11 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 19:31:14,547 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:31:15,516 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-15 19:31:15,516 DEBUG   SenderThread:27464 [sender.py:send():90] send: exit
+2020-12-15 19:31:15,517 INFO    SenderThread:27464 [sender.py:send_exit():168] handling exit code: 1
+2020-12-15 19:31:15,517 INFO    SenderThread:27464 [sender.py:send_exit():176] send defer
+2020-12-15 19:31:15,517 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:15,517 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: poll_exit
+2020-12-15 19:31:15,517 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:15,518 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 0
+2020-12-15 19:31:15,518 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:15,518 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:15,518 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-12-15 19:31:15,518 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 1
+2020-12-15 19:31:15,518 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:15,518 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 1
+2020-12-15 19:31:15,567 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:15,567 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:15,568 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-12-15 19:31:15,568 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 2
+2020-12-15 19:31:15,568 DEBUG   SenderThread:27464 [sender.py:send():90] send: stats
+2020-12-15 19:31:15,568 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:15,570 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 2
+2020-12-15 19:31:15,570 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:15,570 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:15,571 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-12-15 19:31:15,571 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 3
+2020-12-15 19:31:15,571 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:15,571 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 3
+2020-12-15 19:31:15,571 DEBUG   SenderThread:27464 [sender.py:send():90] send: summary
+2020-12-15 19:31:15,572 INFO    SenderThread:27464 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-15 19:31:15,572 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:15,572 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:15,572 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-12-15 19:31:15,572 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 4
+2020-12-15 19:31:15,572 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:15,572 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 4
+2020-12-15 19:31:15,573 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:15,573 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:15,573 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-12-15 19:31:15,573 INFO    SenderThread:27464 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-12-15 19:31:15,872 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:31:16,408 INFO    SenderThread:27464 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:31:16,408 INFO    SenderThread:27464 [dir_watcher.py:finish():309] scan: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files
+2020-12-15 19:31:16,409 INFO    SenderThread:27464 [dir_watcher.py:finish():315] scan save: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/requirements.txt requirements.txt
+2020-12-15 19:31:16,409 INFO    SenderThread:27464 [dir_watcher.py:finish():315] scan save: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log output.log
+2020-12-15 19:31:16,409 INFO    SenderThread:27464 [dir_watcher.py:finish():315] scan save: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/config.yaml config.yaml
+2020-12-15 19:31:16,409 INFO    SenderThread:27464 [dir_watcher.py:finish():315] scan save: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/wandb-metadata.json wandb-metadata.json
+2020-12-15 19:31:16,409 INFO    SenderThread:27464 [dir_watcher.py:finish():315] scan save: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/wandb-summary.json wandb-summary.json
+2020-12-15 19:31:16,410 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 5
+2020-12-15 19:31:16,415 DEBUG   Thread-12 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:31:16,429 DEBUG   Thread-15 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:31:16,430 DEBUG   Thread-13 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:31:16,430 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:16,430 DEBUG   Thread-14 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 19:31:16,431 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 5
+2020-12-15 19:31:16,431 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:16,431 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:16,431 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-12-15 19:31:16,431 INFO    SenderThread:27464 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-15 19:31:16,431 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 6
+2020-12-15 19:31:16,431 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:16,431 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 6
+2020-12-15 19:31:16,432 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:16,432 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:16,432 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-12-15 19:31:16,658 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:31:16,774 DEBUG   Thread-13 :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:31:16,779 DEBUG   Thread-13 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 19:31:16,781 DEBUG   Thread-12 :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:31:16,781 DEBUG   Thread-15 :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:31:16,788 DEBUG   Thread-14 :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 19:31:16,789 DEBUG   Thread-12 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 19:31:16,793 DEBUG   Thread-15 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 19:31:16,800 DEBUG   Thread-14 :27464 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 19:31:16,892 DEBUG   Thread-5  :27464 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/16vgznj1/file_stream HTTP/1.1" 200 None
+2020-12-15 19:31:16,893 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 7
+2020-12-15 19:31:16,894 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:16,894 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 7
+2020-12-15 19:31:16,894 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:16,894 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:16,894 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-12-15 19:31:16,894 INFO    SenderThread:27464 [sender.py:send_request_defer():221] send defer: 8
+2020-12-15 19:31:16,894 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: defer
+2020-12-15 19:31:16,894 DEBUG   SenderThread:27464 [sender.py:send():90] send: final
+2020-12-15 19:31:16,894 INFO    HandlerThread:27464 [handler.py:handle_request_defer():69] handle defer: 8
+2020-12-15 19:31:16,894 DEBUG   SenderThread:27464 [sender.py:send():90] send: footer
+2020-12-15 19:31:16,894 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:16,894 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: defer
+2020-12-15 19:31:16,895 INFO    SenderThread:27464 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-12-15 19:31:17,354 DEBUG   Thread-13 :27464 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/DeepMimicTorch/16vgznj1/output.log?Expires=1608114676&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=WTpEUe4XaS6w0wu3KCVgWcvIcT8mqzyzyYPmXkyDtfGLs8t%2BsCS97mM4N5y%2B4rnLmjHub2H%2BMHoCSXG7I8vlzkMHfffnpL001onHduupex08Kdf%2FRlMLlIAZ8GKTO8B7CFqdjDdhG3TOVqiFi0RYE%2BtB2gYHTnwX6XXBTxQETZtRo0DKaWKr3XLbXCFLWIWMGDKA8q12rsuGJEbaWyY8%2FibZOM9vxztpWTuIserPrR90pjF60Vlqw8YFOFzJ00JdO4sG%2FNSG5NFfyJt%2BWe8KMAZOjr50BU54ubFA4BvfHGfPdSkLcpeyFiGt4AIAW50F5P809DzUJfP0vW3BZ8MZ9Q%3D%3D HTTP/1.1" 200 0
+2020-12-15 19:31:17,355 INFO    Thread-13 :27464 [upload_job.py:push():131] Uploaded file /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/output.log
+2020-12-15 19:31:17,381 DEBUG   Thread-14 :27464 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/DeepMimicTorch/16vgznj1/config.yaml?Expires=1608114676&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=l6RiVTweRZK0BHUvrGtrfjj%2FIS1Sr7cMWc93%2BE3Mz67m3JaP5TDQ9twg2dRxBvlBig5JOuuSnXGQOtsfkncanKwK6chso09iNazrPB37ryefSnIzz5NFugL4ZcOVOOH%2FUaBx4TGFYfQrzzxAleODnLVfyyOvkoHPwkH%2Fvu7sprBt6zPejrkA%2B9VgPiEqPh%2FLX33KGmUKfneQgqRS2gfehAk2uU4ojDAGtD8foWJugrGH9GZ27X7vQZesQv23fCZ%2Fose8ByJ2%2FKJR5m8vDleP6L04UQDoAsXAr9uMp6PVqgFWBNBrqPoKKM2iV558UFtj%2ByLDwL1dTX2jMbWtxe4fvQ%3D%3D HTTP/1.1" 200 0
+2020-12-15 19:31:17,383 INFO    Thread-14 :27464 [upload_job.py:push():131] Uploaded file /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/config.yaml
+2020-12-15 19:31:17,521 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-15 19:31:17,521 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:17,521 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: poll_exit
+2020-12-15 19:31:18,012 DEBUG   Thread-12 :27464 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/DeepMimicTorch/16vgznj1/requirements.txt?Expires=1608114676&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=MEIiC0NOp1N8A9qJNGakNJUwek9c1tHcoYeNTTvTuNNc0oIO1h4GJ9onx3dJhS0%2Ba48l2RIIHkBZBd%2F0Hn87fbeLgEb3xLjadulrrsB%2F3hvErhW6E6VW2ZFFppBu3xk%2FHtdSQ05J%2Fjn6lTkVKgob2uF3pir4ZGsY9bLGVcGLIJHq8cA%2BpSMvWJeSdF1a48Fs5V12FnoWy7E1058nFypqhocfms5%2BEJtRenzK9J3i6hdn12U8Fz8LK5%2FcJV1zC1d6BasxR430U5NTQM2AegNJ4vCLLPX%2BhC6O5ubILIi8Y59V7l2GPLXcY3Q2sE3RdYs5tpH0i9gUC5FpiEATmttq%2FQ%3D%3D HTTP/1.1" 200 0
+2020-12-15 19:31:18,014 INFO    Thread-12 :27464 [upload_job.py:push():131] Uploaded file /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/requirements.txt
+2020-12-15 19:31:18,086 DEBUG   Thread-15 :27464 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/DeepMimicTorch/16vgznj1/wandb-summary.json?Expires=1608114676&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=B6N48VRXY00sJEl%2B6AFr7Iq8ZKlMsF3Ju%2B2MPuxCDwKeh%2FwSNMI436Evi01a%2F1RtGIqXo0%2F%2FsMPE6fUYWl4yAh63IeuMkbSNWBgNXPK8%2BtEdKCiDFBEBCK8s6ZOyxw3kJad8yT3jtGB%2FC2UIEX%2Ftz0sngiMZXlZsEIFrFxmjv9F%2Bgtul2k%2B6ERfLdltzYS6s9QUKdFANK9T6bcTZBfW0k5IYTUJh%2FcDTbaeNEDuwwBimJSHywta1sOkM6EwRH3qvSGMgDVuKKecqWvdY%2BovowWKP21ysTB6o9H8m3vtoyN1d7J5H0TwX4JlB7nbjtev%2Fos3CDlPN4VjdlOuFPziMjg%3D%3D HTTP/1.1" 200 0
+2020-12-15 19:31:18,088 INFO    Thread-15 :27464 [upload_job.py:push():131] Uploaded file /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/files/wandb-summary.json
+2020-12-15 19:31:18,108 DEBUG   Thread-11 :27464 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/DeepMimicTorch/16vgznj1/wandb-metadata.json?Expires=1608114450&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=CWDXvtZeZ%2FKwhAxxx8EYZfDEelNt%2FI0kbelRYKcVrVbUE65DxKSJQStxUje17MQLHWJ7DuNF2Mqod8bjnxuOPbchrGpaM%2B9yxSh%2Ftdz8N7CCXL2vMKleo81zMvexuTrZ7ZHF%2BLPrlicBmC3R%2BxjAyKpWtDCv14O6aB4KsVIQ0J7QielV%2B6N2RiFtEhP2CsCAhTAVwhADhvwaFht9jecK4FbrblgJMG4qVUqxQvHJt%2BbxEeDfgde1Sl%2B%2FIVma2y0x2xpmVR9ThVT6dexymf2IjOmkaQ7e0mSm3QG1R1elqvX22yGe5HjBhYZ2ppZJrCPWInBvLIS0WdzVEA3N%2BnmVqg%3D%3D HTTP/1.1" 200 0
+2020-12-15 19:31:18,109 INFO    Thread-11 :27464 [upload_job.py:push():131] Uploaded file /tmp/tmp7jkgrd2swandb/33xbcu4u-wandb-metadata.json
+2020-12-15 19:31:19,525 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-15 19:31:19,525 DEBUG   SenderThread:27464 [sender.py:send():90] send: request
+2020-12-15 19:31:19,525 DEBUG   SenderThread:27464 [sender.py:send_request():99] send_request: poll_exit
+2020-12-15 19:31:19,525 INFO    SenderThread:27464 [file_pusher.py:join():174] waiting for file pusher
+2020-12-15 19:31:19,526 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: get_summary
+2020-12-15 19:31:19,527 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: sampled_history
+2020-12-15 19:31:19,527 DEBUG   HandlerThread:27464 [handler.py:handle_request():55] handle_request: shutdown
+2020-12-15 19:31:19,527 INFO    HandlerThread:27464 [handler.py:finish():271] shutting down handler
+2020-12-15 19:31:19,895 INFO    WriterThread:27464 [datastore.py:close():257] close: /home/kim/torch_mimic/wandb/run-20201215_192729-16vgznj1/run-16vgznj1.wandb
+2020-12-15 19:31:20,525 INFO    SenderThread:27464 [sender.py:finish():642] shutting down sender
+2020-12-15 19:31:20,526 INFO    SenderThread:27464 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-15 19:31:20,526 INFO    SenderThread:27464 [file_pusher.py:join():174] waiting for file pusher
+2020-12-15 19:31:20,526 INFO    MainThread:27464 [internal.py:handle_exit():138] Internal process exited

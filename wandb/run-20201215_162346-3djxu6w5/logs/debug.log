@@ -1,0 +1,55 @@
+2020-12-15 16:23:46,804 INFO    MainThread:21540 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-15 16:23:46,805 INFO    MainThread:21540 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-15 16:23:46,805 INFO    MainThread:21540 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-15 16:23:46,805 INFO    MainThread:21540 [wandb_init.py:_log_setup():303] Logging user logs to /home/kim/torch_mimic/wandb/run-20201215_162346-3djxu6w5/logs/debug.log
+2020-12-15 16:23:46,805 INFO    MainThread:21540 [wandb_init.py:_log_setup():304] Logging internal logs to /home/kim/torch_mimic/wandb/run-20201215_162346-3djxu6w5/logs/debug-internal.log
+2020-12-15 16:23:46,805 INFO    MainThread:21540 [wandb_init.py:init():359] wandb.init() called when a run is still active
+2020-12-15 16:23:52,117 INFO    MainThread:21540 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2020-12-15 16:23:52,117 INFO    MainThread:21540 [wandb_run.py:_restore():1179] restore
+2020-12-15 16:23:52,117 INFO    MainThread:21540 [redirect.py:uninstall():223] uninstall start
+2020-12-15 16:23:52,118 INFO    MainThread:21540 [redirect.py:_stop():278] _stop: stdout
+2020-12-15 16:23:52,118 INFO    MainThread:21540 [redirect.py:_stop():284] _stop closed: stdout
+2020-12-15 16:23:52,118 INFO    stdout    :21540 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2020-12-15 16:23:52,119 INFO    stdout    :21540 [redirect.py:_pipe_relay():136] relay done done: stdout
+2020-12-15 16:23:52,119 INFO    MainThread:21540 [redirect.py:_stop():290] _stop joined: stdout
+2020-12-15 16:23:52,119 INFO    MainThread:21540 [redirect.py:_stop():292] _stop rd closed: stdout
+2020-12-15 16:23:52,119 INFO    MainThread:21540 [redirect.py:uninstall():227] uninstall done
+2020-12-15 16:23:52,119 INFO    MainThread:21540 [redirect.py:uninstall():223] uninstall start
+2020-12-15 16:23:52,119 INFO    MainThread:21540 [redirect.py:_stop():278] _stop: stderr
+2020-12-15 16:23:52,119 INFO    MainThread:21540 [redirect.py:_stop():284] _stop closed: stderr
+2020-12-15 16:23:52,119 INFO    stderr    :21540 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2020-12-15 16:23:52,119 INFO    stderr    :21540 [redirect.py:_pipe_relay():136] relay done done: stderr
+2020-12-15 16:23:52,120 INFO    MainThread:21540 [redirect.py:_stop():290] _stop joined: stderr
+2020-12-15 16:23:52,120 INFO    MainThread:21540 [redirect.py:_stop():292] _stop rd closed: stderr
+2020-12-15 16:23:52,120 INFO    MainThread:21540 [redirect.py:uninstall():227] uninstall done
+2020-12-15 16:23:52,122 INFO    MainThread:21540 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "5c108beb8ca5472bb53efece015e2155"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 511
+      total_bytes: 511
+    }
+  }
+}
+
+2020-12-15 16:23:54,126 INFO    MainThread:21540 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "da4feed95cce4e6194e5c0b99cb36e47"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4016
+      total_bytes: 4016
+    }
+  }
+}
+
+2020-12-15 16:23:55,214 INFO    MainThread:21540 [wandb_run.py:_show_files():1536] logging synced files
+2020-12-15 16:23:55,217 INFO    MainThread:21540 [internal.py:handle_exit():138] Internal process exited

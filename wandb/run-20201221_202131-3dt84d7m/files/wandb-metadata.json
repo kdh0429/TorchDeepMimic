@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-126-generic-x86_64-with-debian-stretch-sid",
+    "python": "3.6.12",
+    "heartbeatAt": "2020-12-21T11:21:32.994303",
+    "startedAt": "2020-12-21T11:21:31.432555",
+    "docker": null,
+    "gpu": "GeForce RTX 2080",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "main.py",
+    "program": "main.py",
+    "host": "kim-desktop",
+    "username": "kim",
+    "executable": "/home/kim/anaconda3/envs/torch_rl/bin/python"
+}

@@ -1,0 +1,27 @@
+--------------------------------------
+| rollout/                |          |
+|    ep_len_mean          | 21.8     |
+|    ep_reward_mean       | 0.313    |
+|    mimic_body_reward    | 0.0114   |
+|    mimic_body_vel_re... | 0.000124 |
+|    mimic_ee_reward      | 9.7e-05  |
+|    mimic_qpos_reward    | 0.000919 |
+|    mimic_qvel_reward    | 4.87e-56 |
+| time/                   |          |
+|    fps                  | 193      |
+|    iterations           | 1        |
+|    time_elapsed         | 21       |
+|    total_timesteps      | 4096     |
+--------------------------------------
+Traceback (most recent call last):
+  File "main.py", line 84, in <module>
+    main()
+  File "main.py", line 40, in main
+    model.learn(total_timesteps=60000000)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 300, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 249, in learn
+    self.train()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 260, in train
+    wandb_dict["ep_reward_mean"] = safe_mean([ep_info['r'] for ep_info in self.ep_info_buffer])
+NameError: name 'safe_mean' is not defined

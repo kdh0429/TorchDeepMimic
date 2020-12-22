@@ -1,0 +1,54 @@
+--------------------------------------
+| rollout/                |          |
+|    ep_len_mean          | 21.6     |
+|    ep_reward_mean       | 0.311    |
+|    mimic_body_reward    | 0.0192   |
+|    mimic_body_vel_re... | 0.000237 |
+|    mimic_ee_reward      | 0.000103 |
+|    mimic_qpos_reward    | 0.000161 |
+|    mimic_qvel_reward    | 2.06e-43 |
+| time/                   |          |
+|    fps                  | 186      |
+|    iterations           | 1        |
+|    time_elapsed         | 21       |
+|    total_timesteps      | 4096     |
+--------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 21.2         |
+|    ep_reward_mean       | 0.337        |
+|    mimic_body_reward    | 0.00738      |
+|    mimic_body_vel_re... | 4.17e-05     |
+|    mimic_ee_reward      | 0.000263     |
+|    mimic_qpos_reward    | 0.000745     |
+|    mimic_qvel_reward    | 3.37e-43     |
+| time/                   |              |
+|    fps                  | 182          |
+|    iterations           | 2            |
+|    time_elapsed         | 44           |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0002560271 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -43          |
+|    explained_variance   | 0.0803       |
+|    learning_rate        | 5e-06        |
+|    loss                 | 0.0886       |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00344     |
+|    std                  | 1.57         |
+|    value_loss           | 0.25         |
+------------------------------------------
+Collision Check ID [1, 2, 3, 4, 5, 9, 10, 11, 12, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+Creating window glfw
+Episode Reward:  [0.6017312]
+Episode Reward:  [0.0689771]
+Episode Reward:  [0.8002426]
+Episode Reward:  [0.0162959]
+Episode Reward:  [0.23497263]
+Episode Reward:  [0.7442458]
+Episode Reward:  [0.34974104]
+Episode Reward:  [0.44212624]
+Pressed ESC
+Quitting.

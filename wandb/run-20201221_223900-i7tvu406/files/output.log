@@ -1,0 +1,994 @@
+--------------------------------------
+| rollout/                |          |
+|    ep_len_mean          | 22       |
+|    ep_reward_mean       | 7.35     |
+|    mimic_body_reward    | 0.0714   |
+|    mimic_body_vel_re... | 0.0109   |
+|    mimic_contact_reward | 0.068    |
+|    mimic_ee_reward      | 0.0147   |
+|    mimic_qpos_reward    | 0.172    |
+|    mimic_qvel_reward    | 0        |
+| time/                   |          |
+|    fps                  | 382      |
+|    iterations           | 1        |
+|    time_elapsed         | 10       |
+|    total_timesteps      | 4096     |
+--------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 22.2         |
+|    ep_reward_mean       | 7.4          |
+|    mimic_body_reward    | 0.0721       |
+|    mimic_body_vel_re... | 0.00915      |
+|    mimic_contact_reward | 0.048        |
+|    mimic_ee_reward      | 0.01         |
+|    mimic_qpos_reward    | 0.171        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 377          |
+|    iterations           | 2            |
+|    time_elapsed         | 21           |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0090519795 |
+|    clip_fraction        | 0.0334       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -2.87e+05    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.98         |
+|    n_updates            | 3            |
+|    policy_gradient_loss | -0.00928     |
+|    std                  | 0.2          |
+|    value_loss           | 6.37         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 22.5         |
+|    ep_reward_mean       | 7.38         |
+|    mimic_body_reward    | 0.0802       |
+|    mimic_body_vel_re... | 0.0112       |
+|    mimic_contact_reward | 0.046        |
+|    mimic_ee_reward      | 0.0176       |
+|    mimic_qpos_reward    | 0.194        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 375          |
+|    iterations           | 3            |
+|    time_elapsed         | 32           |
+|    total_timesteps      | 12288        |
+| train/                  |              |
+|    approx_kl            | 0.0061727557 |
+|    clip_fraction        | 0.0157       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -6.18e+04    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 3.05         |
+|    n_updates            | 6            |
+|    policy_gradient_loss | -0.00587     |
+|    std                  | 0.2          |
+|    value_loss           | 5.99         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 22.8        |
+|    ep_reward_mean       | 7.7         |
+|    mimic_body_reward    | 0.0767      |
+|    mimic_body_vel_re... | 0.00897     |
+|    mimic_contact_reward | 0.038       |
+|    mimic_ee_reward      | 0.0135      |
+|    mimic_qpos_reward    | 0.18        |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 375         |
+|    iterations           | 4           |
+|    time_elapsed         | 43          |
+|    total_timesteps      | 16384       |
+| train/                  |             |
+|    approx_kl            | 0.005668662 |
+|    clip_fraction        | 0.0174      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -1.88e+04   |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.5         |
+|    n_updates            | 9           |
+|    policy_gradient_loss | -0.00635    |
+|    std                  | 0.2         |
+|    value_loss           | 5.92        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 22.2         |
+|    ep_reward_mean       | 7.44         |
+|    mimic_body_reward    | 0.0527       |
+|    mimic_body_vel_re... | 0.00557      |
+|    mimic_contact_reward | 0.034        |
+|    mimic_ee_reward      | 0.016        |
+|    mimic_qpos_reward    | 0.171        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 374          |
+|    iterations           | 5            |
+|    time_elapsed         | 54           |
+|    total_timesteps      | 20480        |
+| train/                  |              |
+|    approx_kl            | 0.0068516885 |
+|    clip_fraction        | 0.0116       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -8.82e+03    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 3.22         |
+|    n_updates            | 12           |
+|    policy_gradient_loss | -0.00573     |
+|    std                  | 0.2          |
+|    value_loss           | 6.13         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 22.1         |
+|    ep_reward_mean       | 7.33         |
+|    mimic_body_reward    | 0.0827       |
+|    mimic_body_vel_re... | 0.00895      |
+|    mimic_contact_reward | 0.042        |
+|    mimic_ee_reward      | 0.0173       |
+|    mimic_qpos_reward    | 0.198        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 374          |
+|    iterations           | 6            |
+|    time_elapsed         | 65           |
+|    total_timesteps      | 24576        |
+| train/                  |              |
+|    approx_kl            | 0.0012486613 |
+|    clip_fraction        | 0.00537      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -4.43e+03    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 3.15         |
+|    n_updates            | 15           |
+|    policy_gradient_loss | -0.0052      |
+|    std                  | 0.2          |
+|    value_loss           | 5.86         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 22.2         |
+|    ep_reward_mean       | 7.51         |
+|    mimic_body_reward    | 0.0608       |
+|    mimic_body_vel_re... | 0.00898      |
+|    mimic_contact_reward | 0.042        |
+|    mimic_ee_reward      | 0.00771      |
+|    mimic_qpos_reward    | 0.177        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 374          |
+|    iterations           | 7            |
+|    time_elapsed         | 76           |
+|    total_timesteps      | 28672        |
+| train/                  |              |
+|    approx_kl            | 0.0048478004 |
+|    clip_fraction        | 0.00806      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -2.74e+03    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.98         |
+|    n_updates            | 18           |
+|    policy_gradient_loss | -0.00497     |
+|    std                  | 0.2          |
+|    value_loss           | 5.93         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 23.9        |
+|    ep_reward_mean       | 8.07        |
+|    mimic_body_reward    | 0.0536      |
+|    mimic_body_vel_re... | 0.0069      |
+|    mimic_contact_reward | 0.036       |
+|    mimic_ee_reward      | 0.0115      |
+|    mimic_qpos_reward    | 0.166       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 373         |
+|    iterations           | 8           |
+|    time_elapsed         | 87          |
+|    total_timesteps      | 32768       |
+| train/                  |             |
+|    approx_kl            | 0.006997297 |
+|    clip_fraction        | 0.0119      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -1.8e+03    |
+|    learning_rate        | 1e-05       |
+|    loss                 | 3.05        |
+|    n_updates            | 21          |
+|    policy_gradient_loss | -0.00623    |
+|    std                  | 0.2         |
+|    value_loss           | 6.06        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 22.2        |
+|    ep_reward_mean       | 7.5         |
+|    mimic_body_reward    | 0.0853      |
+|    mimic_body_vel_re... | 0.012       |
+|    mimic_contact_reward | 0.042       |
+|    mimic_ee_reward      | 0.0173      |
+|    mimic_qpos_reward    | 0.202       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 373         |
+|    iterations           | 9           |
+|    time_elapsed         | 98          |
+|    total_timesteps      | 36864       |
+| train/                  |             |
+|    approx_kl            | 0.005531548 |
+|    clip_fraction        | 0.00464     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -1.31e+03   |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.99        |
+|    n_updates            | 24          |
+|    policy_gradient_loss | -0.00539    |
+|    std                  | 0.2         |
+|    value_loss           | 6.32        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 23.6         |
+|    ep_reward_mean       | 7.87         |
+|    mimic_body_reward    | 0.0646       |
+|    mimic_body_vel_re... | 0.00771      |
+|    mimic_contact_reward | 0.036        |
+|    mimic_ee_reward      | 0.0118       |
+|    mimic_qpos_reward    | 0.183        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 372          |
+|    iterations           | 10           |
+|    time_elapsed         | 109          |
+|    total_timesteps      | 40960        |
+| train/                  |              |
+|    approx_kl            | 0.0066254917 |
+|    clip_fraction        | 0.019        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -778         |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.81         |
+|    n_updates            | 27           |
+|    policy_gradient_loss | -0.00676     |
+|    std                  | 0.2          |
+|    value_loss           | 5.83         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 23.7         |
+|    ep_reward_mean       | 7.9          |
+|    mimic_body_reward    | 0.0583       |
+|    mimic_body_vel_re... | 0.00678      |
+|    mimic_contact_reward | 0.026        |
+|    mimic_ee_reward      | 0.0172       |
+|    mimic_qpos_reward    | 0.187        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 372          |
+|    iterations           | 11           |
+|    time_elapsed         | 120          |
+|    total_timesteps      | 45056        |
+| train/                  |              |
+|    approx_kl            | 0.0064218836 |
+|    clip_fraction        | 0.0107       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -552         |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.78         |
+|    n_updates            | 30           |
+|    policy_gradient_loss | -0.00616     |
+|    std                  | 0.2          |
+|    value_loss           | 5.85         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 23.1         |
+|    ep_reward_mean       | 7.72         |
+|    mimic_body_reward    | 0.0803       |
+|    mimic_body_vel_re... | 0.00848      |
+|    mimic_contact_reward | 0.032        |
+|    mimic_ee_reward      | 0.0178       |
+|    mimic_qpos_reward    | 0.191        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 371          |
+|    iterations           | 12           |
+|    time_elapsed         | 132          |
+|    total_timesteps      | 49152        |
+| train/                  |              |
+|    approx_kl            | 0.0055809123 |
+|    clip_fraction        | 0.00863      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -434         |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.86         |
+|    n_updates            | 33           |
+|    policy_gradient_loss | -0.00572     |
+|    std                  | 0.2          |
+|    value_loss           | 5.89         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 24          |
+|    ep_reward_mean       | 7.83        |
+|    mimic_body_reward    | 0.0805      |
+|    mimic_body_vel_re... | 0.0131      |
+|    mimic_contact_reward | 0.044       |
+|    mimic_ee_reward      | 0.0147      |
+|    mimic_qpos_reward    | 0.182       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 371         |
+|    iterations           | 13          |
+|    time_elapsed         | 143         |
+|    total_timesteps      | 53248       |
+| train/                  |             |
+|    approx_kl            | 0.005119955 |
+|    clip_fraction        | 0.00716     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -290        |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.25        |
+|    n_updates            | 36          |
+|    policy_gradient_loss | -0.00478    |
+|    std                  | 0.2         |
+|    value_loss           | 5.27        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 24.1         |
+|    ep_reward_mean       | 7.98         |
+|    mimic_body_reward    | 0.0671       |
+|    mimic_body_vel_re... | 0.00921      |
+|    mimic_contact_reward | 0.042        |
+|    mimic_ee_reward      | 0.0146       |
+|    mimic_qpos_reward    | 0.197        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 371          |
+|    iterations           | 14           |
+|    time_elapsed         | 154          |
+|    total_timesteps      | 57344        |
+| train/                  |              |
+|    approx_kl            | 0.0087031005 |
+|    clip_fraction        | 0.0115       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -217         |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.94         |
+|    n_updates            | 39           |
+|    policy_gradient_loss | -0.00603     |
+|    std                  | 0.2          |
+|    value_loss           | 5.4          |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 25           |
+|    ep_reward_mean       | 8.23         |
+|    mimic_body_reward    | 0.0615       |
+|    mimic_body_vel_re... | 0.00857      |
+|    mimic_contact_reward | 0.04         |
+|    mimic_ee_reward      | 0.0142       |
+|    mimic_qpos_reward    | 0.162        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 370          |
+|    iterations           | 15           |
+|    time_elapsed         | 165          |
+|    total_timesteps      | 61440        |
+| train/                  |              |
+|    approx_kl            | 0.0071106562 |
+|    clip_fraction        | 0.00977      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -155         |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.52         |
+|    n_updates            | 42           |
+|    policy_gradient_loss | -0.00584     |
+|    std                  | 0.2          |
+|    value_loss           | 5.24         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 25           |
+|    ep_reward_mean       | 8.21         |
+|    mimic_body_reward    | 0.0588       |
+|    mimic_body_vel_re... | 0.0108       |
+|    mimic_contact_reward | 0.044        |
+|    mimic_ee_reward      | 0.00985      |
+|    mimic_qpos_reward    | 0.17         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 370          |
+|    iterations           | 16           |
+|    time_elapsed         | 176          |
+|    total_timesteps      | 65536        |
+| train/                  |              |
+|    approx_kl            | 0.0034835343 |
+|    clip_fraction        | 0.00814      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -128         |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.72         |
+|    n_updates            | 45           |
+|    policy_gradient_loss | -0.00532     |
+|    std                  | 0.2          |
+|    value_loss           | 5.32         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 26.1        |
+|    ep_reward_mean       | 8.74        |
+|    mimic_body_reward    | 0.0859      |
+|    mimic_body_vel_re... | 0.0153      |
+|    mimic_contact_reward | 0.07        |
+|    mimic_ee_reward      | 0.0147      |
+|    mimic_qpos_reward    | 0.202       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 370         |
+|    iterations           | 17          |
+|    time_elapsed         | 188         |
+|    total_timesteps      | 69632       |
+| train/                  |             |
+|    approx_kl            | 0.005451048 |
+|    clip_fraction        | 0.0119      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -93         |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.05        |
+|    n_updates            | 48          |
+|    policy_gradient_loss | -0.00631    |
+|    std                  | 0.2         |
+|    value_loss           | 5.07        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 24.2        |
+|    ep_reward_mean       | 7.94        |
+|    mimic_body_reward    | 0.085       |
+|    mimic_body_vel_re... | 0.0123      |
+|    mimic_contact_reward | 0.076       |
+|    mimic_ee_reward      | 0.0154      |
+|    mimic_qpos_reward    | 0.195       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 369         |
+|    iterations           | 18          |
+|    time_elapsed         | 199         |
+|    total_timesteps      | 73728       |
+| train/                  |             |
+|    approx_kl            | 0.006244896 |
+|    clip_fraction        | 0.00667     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -76.3       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.28        |
+|    n_updates            | 51          |
+|    policy_gradient_loss | -0.00508    |
+|    std                  | 0.2         |
+|    value_loss           | 5.21        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 25.8        |
+|    ep_reward_mean       | 8.56        |
+|    mimic_body_reward    | 0.0453      |
+|    mimic_body_vel_re... | 0.0069      |
+|    mimic_contact_reward | 0.038       |
+|    mimic_ee_reward      | 0.0102      |
+|    mimic_qpos_reward    | 0.177       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 369         |
+|    iterations           | 19          |
+|    time_elapsed         | 210         |
+|    total_timesteps      | 77824       |
+| train/                  |             |
+|    approx_kl            | 0.006434979 |
+|    clip_fraction        | 0.0146      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -59.2       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.98        |
+|    n_updates            | 54          |
+|    policy_gradient_loss | -0.00622    |
+|    std                  | 0.2         |
+|    value_loss           | 4.68        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 24.5        |
+|    ep_reward_mean       | 8.21        |
+|    mimic_body_reward    | 0.0914      |
+|    mimic_body_vel_re... | 0.0121      |
+|    mimic_contact_reward | 0.05        |
+|    mimic_ee_reward      | 0.0172      |
+|    mimic_qpos_reward    | 0.188       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 367         |
+|    iterations           | 20          |
+|    time_elapsed         | 222         |
+|    total_timesteps      | 81920       |
+| train/                  |             |
+|    approx_kl            | 0.004802596 |
+|    clip_fraction        | 0.0125      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -49.1       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.62        |
+|    n_updates            | 57          |
+|    policy_gradient_loss | -0.00585    |
+|    std                  | 0.2         |
+|    value_loss           | 4.78        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 25.7         |
+|    ep_reward_mean       | 8.57         |
+|    mimic_body_reward    | 0.0588       |
+|    mimic_body_vel_re... | 0.00891      |
+|    mimic_contact_reward | 0.03         |
+|    mimic_ee_reward      | 0.018        |
+|    mimic_qpos_reward    | 0.189        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 368          |
+|    iterations           | 21           |
+|    time_elapsed         | 233          |
+|    total_timesteps      | 86016        |
+| train/                  |              |
+|    approx_kl            | 0.0048956517 |
+|    clip_fraction        | 0.00488      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -34.5        |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.19         |
+|    n_updates            | 60           |
+|    policy_gradient_loss | -0.00494     |
+|    std                  | 0.2          |
+|    value_loss           | 4.47         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 26.9         |
+|    ep_reward_mean       | 8.84         |
+|    mimic_body_reward    | 0.0544       |
+|    mimic_body_vel_re... | 0.00871      |
+|    mimic_contact_reward | 0.064        |
+|    mimic_ee_reward      | 0.008        |
+|    mimic_qpos_reward    | 0.167        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 367          |
+|    iterations           | 22           |
+|    time_elapsed         | 244          |
+|    total_timesteps      | 90112        |
+| train/                  |              |
+|    approx_kl            | 0.0065687327 |
+|    clip_fraction        | 0.0192       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -29.6        |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.34         |
+|    n_updates            | 63           |
+|    policy_gradient_loss | -0.00662     |
+|    std                  | 0.2          |
+|    value_loss           | 4.6          |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 27.2         |
+|    ep_reward_mean       | 8.8          |
+|    mimic_body_reward    | 0.0739       |
+|    mimic_body_vel_re... | 0.0122       |
+|    mimic_contact_reward | 0.05         |
+|    mimic_ee_reward      | 0.0138       |
+|    mimic_qpos_reward    | 0.175        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 367          |
+|    iterations           | 23           |
+|    time_elapsed         | 256          |
+|    total_timesteps      | 94208        |
+| train/                  |              |
+|    approx_kl            | 0.0053743473 |
+|    clip_fraction        | 0.019        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -23.3        |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.18         |
+|    n_updates            | 66           |
+|    policy_gradient_loss | -0.00683     |
+|    std                  | 0.2          |
+|    value_loss           | 4.39         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 25.7         |
+|    ep_reward_mean       | 8.57         |
+|    mimic_body_reward    | 0.0629       |
+|    mimic_body_vel_re... | 0.0115       |
+|    mimic_contact_reward | 0.05         |
+|    mimic_ee_reward      | 0.0123       |
+|    mimic_qpos_reward    | 0.17         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 367          |
+|    iterations           | 24           |
+|    time_elapsed         | 267          |
+|    total_timesteps      | 98304        |
+| train/                  |              |
+|    approx_kl            | 0.0054613855 |
+|    clip_fraction        | 0.018        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -18.1        |
+|    learning_rate        | 1e-05        |
+|    loss                 | 2.13         |
+|    n_updates            | 69           |
+|    policy_gradient_loss | -0.00696     |
+|    std                  | 0.2          |
+|    value_loss           | 4.28         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 27.1        |
+|    ep_reward_mean       | 9.04        |
+|    mimic_body_reward    | 0.103       |
+|    mimic_body_vel_re... | 0.015       |
+|    mimic_contact_reward | 0.07        |
+|    mimic_ee_reward      | 0.0174      |
+|    mimic_qpos_reward    | 0.195       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 367         |
+|    iterations           | 25          |
+|    time_elapsed         | 278         |
+|    total_timesteps      | 102400      |
+| train/                  |             |
+|    approx_kl            | 0.006303113 |
+|    clip_fraction        | 0.0116      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -14.4       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.29        |
+|    n_updates            | 72          |
+|    policy_gradient_loss | -0.00579    |
+|    std                  | 0.2         |
+|    value_loss           | 4.3         |
+-----------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 26.4       |
+|    ep_reward_mean       | 8.86       |
+|    mimic_body_reward    | 0.0678     |
+|    mimic_body_vel_re... | 0.00847    |
+|    mimic_contact_reward | 0.044      |
+|    mimic_ee_reward      | 0.0121     |
+|    mimic_qpos_reward    | 0.185      |
+|    mimic_qvel_reward    | 0          |
+| time/                   |            |
+|    fps                  | 367        |
+|    iterations           | 26         |
+|    time_elapsed         | 289        |
+|    total_timesteps      | 106496     |
+| train/                  |            |
+|    approx_kl            | 0.00517204 |
+|    clip_fraction        | 0.0169     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 4.38       |
+|    explained_variance   | -12.8      |
+|    learning_rate        | 1e-05      |
+|    loss                 | 2.21       |
+|    n_updates            | 75         |
+|    policy_gradient_loss | -0.00665   |
+|    std                  | 0.2        |
+|    value_loss           | 4.51       |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 26.6        |
+|    ep_reward_mean       | 8.65        |
+|    mimic_body_reward    | 0.0906      |
+|    mimic_body_vel_re... | 0.0152      |
+|    mimic_contact_reward | 0.06        |
+|    mimic_ee_reward      | 0.0138      |
+|    mimic_qpos_reward    | 0.172       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 367         |
+|    iterations           | 27          |
+|    time_elapsed         | 301         |
+|    total_timesteps      | 110592      |
+| train/                  |             |
+|    approx_kl            | 0.008536163 |
+|    clip_fraction        | 0.0206      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -10         |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.98        |
+|    n_updates            | 78          |
+|    policy_gradient_loss | -0.00731    |
+|    std                  | 0.2         |
+|    value_loss           | 4.04        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 25.8        |
+|    ep_reward_mean       | 8.65        |
+|    mimic_body_reward    | 0.0903      |
+|    mimic_body_vel_re... | 0.011       |
+|    mimic_contact_reward | 0.046       |
+|    mimic_ee_reward      | 0.013       |
+|    mimic_qpos_reward    | 0.195       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 367         |
+|    iterations           | 28          |
+|    time_elapsed         | 311         |
+|    total_timesteps      | 114688      |
+| train/                  |             |
+|    approx_kl            | 0.008025367 |
+|    clip_fraction        | 0.0255      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -7.31       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.9         |
+|    n_updates            | 81          |
+|    policy_gradient_loss | -0.0072     |
+|    std                  | 0.2         |
+|    value_loss           | 3.89        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 26.3         |
+|    ep_reward_mean       | 8.66         |
+|    mimic_body_reward    | 0.0449       |
+|    mimic_body_vel_re... | 0.00425      |
+|    mimic_contact_reward | 0.026        |
+|    mimic_ee_reward      | 0.00928      |
+|    mimic_qpos_reward    | 0.17         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 367          |
+|    iterations           | 29           |
+|    time_elapsed         | 322          |
+|    total_timesteps      | 118784       |
+| train/                  |              |
+|    approx_kl            | 0.0079049915 |
+|    clip_fraction        | 0.0186       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -6.32        |
+|    learning_rate        | 1e-05        |
+|    loss                 | 1.58         |
+|    n_updates            | 84           |
+|    policy_gradient_loss | -0.00631     |
+|    std                  | 0.2          |
+|    value_loss           | 3.87         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 27.4        |
+|    ep_reward_mean       | 8.8         |
+|    mimic_body_reward    | 0.064       |
+|    mimic_body_vel_re... | 0.0101      |
+|    mimic_contact_reward | 0.062       |
+|    mimic_ee_reward      | 0.0126      |
+|    mimic_qpos_reward    | 0.191       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 367         |
+|    iterations           | 30          |
+|    time_elapsed         | 334         |
+|    total_timesteps      | 122880      |
+| train/                  |             |
+|    approx_kl            | 0.011049718 |
+|    clip_fraction        | 0.0428      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -5.18       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.91        |
+|    n_updates            | 87          |
+|    policy_gradient_loss | -0.00842    |
+|    std                  | 0.2         |
+|    value_loss           | 3.74        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 28.3        |
+|    ep_reward_mean       | 9.19        |
+|    mimic_body_reward    | 0.059       |
+|    mimic_body_vel_re... | 0.00804     |
+|    mimic_contact_reward | 0.024       |
+|    mimic_ee_reward      | 0.0123      |
+|    mimic_qpos_reward    | 0.177       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 368         |
+|    iterations           | 31          |
+|    time_elapsed         | 344         |
+|    total_timesteps      | 126976      |
+| train/                  |             |
+|    approx_kl            | 0.008907637 |
+|    clip_fraction        | 0.0412      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -4.64       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.95        |
+|    n_updates            | 90          |
+|    policy_gradient_loss | -0.00851    |
+|    std                  | 0.2         |
+|    value_loss           | 3.9         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 26.4        |
+|    ep_reward_mean       | 8.65        |
+|    mimic_body_reward    | 0.0604      |
+|    mimic_body_vel_re... | 0.0115      |
+|    mimic_contact_reward | 0.038       |
+|    mimic_ee_reward      | 0.0149      |
+|    mimic_qpos_reward    | 0.187       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 368         |
+|    iterations           | 32          |
+|    time_elapsed         | 355         |
+|    total_timesteps      | 131072      |
+| train/                  |             |
+|    approx_kl            | 0.008919009 |
+|    clip_fraction        | 0.026       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -4.03       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 2.02        |
+|    n_updates            | 93          |
+|    policy_gradient_loss | -0.00769    |
+|    std                  | 0.2         |
+|    value_loss           | 3.8         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 27.7        |
+|    ep_reward_mean       | 9.08        |
+|    mimic_body_reward    | 0.0781      |
+|    mimic_body_vel_re... | 0.0117      |
+|    mimic_contact_reward | 0.046       |
+|    mimic_ee_reward      | 0.0147      |
+|    mimic_qpos_reward    | 0.187       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 368         |
+|    iterations           | 33          |
+|    time_elapsed         | 366         |
+|    total_timesteps      | 135168      |
+| train/                  |             |
+|    approx_kl            | 0.009637688 |
+|    clip_fraction        | 0.0291      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -3.41       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.68        |
+|    n_updates            | 96          |
+|    policy_gradient_loss | -0.00708    |
+|    std                  | 0.2         |
+|    value_loss           | 3.75        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 26.1         |
+|    ep_reward_mean       | 8.65         |
+|    mimic_body_reward    | 0.0167       |
+|    mimic_body_vel_re... | 0.00605      |
+|    mimic_contact_reward | 0.044        |
+|    mimic_ee_reward      | 0.00728      |
+|    mimic_qpos_reward    | 0.155        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 369          |
+|    iterations           | 34           |
+|    time_elapsed         | 377          |
+|    total_timesteps      | 139264       |
+| train/                  |              |
+|    approx_kl            | 0.0075566503 |
+|    clip_fraction        | 0.019        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -2.78        |
+|    learning_rate        | 1e-05        |
+|    loss                 | 1.57         |
+|    n_updates            | 99           |
+|    policy_gradient_loss | -0.00607     |
+|    std                  | 0.2          |
+|    value_loss           | 3.6          |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 27.9        |
+|    ep_reward_mean       | 9.04        |
+|    mimic_body_reward    | 0.116       |
+|    mimic_body_vel_re... | 0.0155      |
+|    mimic_contact_reward | 0.062       |
+|    mimic_ee_reward      | 0.0149      |
+|    mimic_qpos_reward    | 0.19        |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 369         |
+|    iterations           | 35          |
+|    time_elapsed         | 388         |
+|    total_timesteps      | 143360      |
+| train/                  |             |
+|    approx_kl            | 0.016446987 |
+|    clip_fraction        | 0.0483      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -2.57       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 1.79        |
+|    n_updates            | 102         |
+|    policy_gradient_loss | -0.00972    |
+|    std                  | 0.2         |
+|    value_loss           | 3.68        |
+-----------------------------------------
+Traceback (most recent call last):
+  File "main.py", line 84, in <module>
+    main()
+  File "main.py", line 40, in main
+    model.learn(total_timesteps=60000000)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 315, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 222, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 162, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 150, in step
+    return self.step_wait()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/vec_normalize.py", line 113, in step_wait
+    obs, rews, news, infos = self.venv.step_wait()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 115, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 115, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt

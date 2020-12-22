@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "main.py", line 84, in <module>
+    main()
+  File "main.py", line 40, in main
+    model.learn(total_timesteps=60000000)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 318, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 254, in learn
+    self.train()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 150, in train
+    self._update_learning_rate_critic(self.policy.critic_optimizer)
+AttributeError: 'PPO' object has no attribute '_update_learning_rate_critic'
+--------------------------------------
+| rollout/                |          |
+|    ep_len_mean          | 21.1     |
+|    ep_reward_mean       | 7.06     |
+|    mimic_body_reward    | 0.0797   |
+|    mimic_body_vel_re... | 0.00805  |
+|    mimic_contact_reward | 0.054    |
+|    mimic_ee_reward      | 0.013    |
+|    mimic_qpos_reward    | 0.197    |
+|    mimic_qvel_reward    | 0        |
+| time/                   |          |
+|    fps                  | 288      |
+|    iterations           | 1        |
+|    time_elapsed         | 14       |
+|    total_timesteps      | 4096     |
+--------------------------------------
