@@ -1,0 +1,240 @@
+--------------------------------------
+| rollout/                |          |
+|    ep_len_mean          | 22.2     |
+|    ep_reward_mean       | 9.61     |
+|    mimic_body_reward    | 0.0838   |
+|    mimic_body_vel_re... | 0.0113   |
+|    mimic_contact_reward | 0.036    |
+|    mimic_ee_reward      | 0.0115   |
+|    mimic_qpos_reward    | 0.273    |
+|    mimic_qvel_reward    | 0        |
+| time/                   |          |
+|    fps                  | 278      |
+|    iterations           | 1        |
+|    time_elapsed         | 14       |
+|    total_timesteps      | 4096     |
+--------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 21.5         |
+|    ep_reward_mean       | 9.29         |
+|    mimic_body_reward    | 0.0826       |
+|    mimic_body_vel_re... | 0.00923      |
+|    mimic_contact_reward | 0.04         |
+|    mimic_ee_reward      | 0.0128       |
+|    mimic_qpos_reward    | 0.282        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 272          |
+|    iterations           | 2            |
+|    time_elapsed         | 30           |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0044082697 |
+|    clip_fraction        | 0.0191       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -2.91e+05    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 5.81         |
+|    n_updates            | 3            |
+|    policy_gradient_loss | -0.00756     |
+|    std                  | 0.2          |
+|    value_loss           | 11.2         |
+------------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 21.9       |
+|    ep_reward_mean       | 9.36       |
+|    mimic_body_reward    | 0.064      |
+|    mimic_body_vel_re... | 0.00805    |
+|    mimic_contact_reward | 0.058      |
+|    mimic_ee_reward      | 0.0098     |
+|    mimic_qpos_reward    | 0.264      |
+|    mimic_qvel_reward    | 0          |
+| time/                   |            |
+|    fps                  | 274        |
+|    iterations           | 3          |
+|    time_elapsed         | 44         |
+|    total_timesteps      | 12288      |
+| train/                  |            |
+|    approx_kl            | 0.00575403 |
+|    clip_fraction        | 0.0125     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 4.38       |
+|    explained_variance   | -8.84e+04  |
+|    learning_rate        | 1e-05      |
+|    loss                 | 5.09       |
+|    n_updates            | 6          |
+|    policy_gradient_loss | -0.00613   |
+|    std                  | 0.2        |
+|    value_loss           | 10.5       |
+----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 21.4         |
+|    ep_reward_mean       | 9.22         |
+|    mimic_body_reward    | 0.0709       |
+|    mimic_body_vel_re... | 0.0125       |
+|    mimic_contact_reward | 0.042        |
+|    mimic_ee_reward      | 0.0155       |
+|    mimic_qpos_reward    | 0.276        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 276          |
+|    iterations           | 4            |
+|    time_elapsed         | 59           |
+|    total_timesteps      | 16384        |
+| train/                  |              |
+|    approx_kl            | 0.0037536947 |
+|    clip_fraction        | 0.00651      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -2.71e+04    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 5.45         |
+|    n_updates            | 9            |
+|    policy_gradient_loss | -0.00548     |
+|    std                  | 0.2          |
+|    value_loss           | 10.6         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 23           |
+|    ep_reward_mean       | 9.91         |
+|    mimic_body_reward    | 0.0647       |
+|    mimic_body_vel_re... | 0.00919      |
+|    mimic_contact_reward | 0.032        |
+|    mimic_ee_reward      | 0.0144       |
+|    mimic_qpos_reward    | 0.269        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 276          |
+|    iterations           | 5            |
+|    time_elapsed         | 74           |
+|    total_timesteps      | 20480        |
+| train/                  |              |
+|    approx_kl            | 0.0033851634 |
+|    clip_fraction        | 0.00553      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -1.26e+04    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 4.74         |
+|    n_updates            | 12           |
+|    policy_gradient_loss | -0.00526     |
+|    std                  | 0.2          |
+|    value_loss           | 10.4         |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 21.6         |
+|    ep_reward_mean       | 9.33         |
+|    mimic_body_reward    | 0.0817       |
+|    mimic_body_vel_re... | 0.0112       |
+|    mimic_contact_reward | 0.072        |
+|    mimic_ee_reward      | 0.0119       |
+|    mimic_qpos_reward    | 0.272        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 276          |
+|    iterations           | 6            |
+|    time_elapsed         | 88           |
+|    total_timesteps      | 24576        |
+| train/                  |              |
+|    approx_kl            | 0.0021654395 |
+|    clip_fraction        | 0.0125       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -7.01e+03    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 5.05         |
+|    n_updates            | 15           |
+|    policy_gradient_loss | -0.00585     |
+|    std                  | 0.2          |
+|    value_loss           | 10.8         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 21.7        |
+|    ep_reward_mean       | 9.54        |
+|    mimic_body_reward    | 0.0825      |
+|    mimic_body_vel_re... | 0.00888     |
+|    mimic_contact_reward | 0.034       |
+|    mimic_ee_reward      | 0.0119      |
+|    mimic_qpos_reward    | 0.278       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 276         |
+|    iterations           | 7           |
+|    time_elapsed         | 103         |
+|    total_timesteps      | 28672       |
+| train/                  |             |
+|    approx_kl            | 0.009271478 |
+|    clip_fraction        | 0.0187      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -3.81e+03   |
+|    learning_rate        | 1e-05       |
+|    loss                 | 5.08        |
+|    n_updates            | 18          |
+|    policy_gradient_loss | -0.00723    |
+|    std                  | 0.2         |
+|    value_loss           | 10.5        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 21.9        |
+|    ep_reward_mean       | 9.56        |
+|    mimic_body_reward    | 0.053       |
+|    mimic_body_vel_re... | 0.00445     |
+|    mimic_contact_reward | 0.05        |
+|    mimic_ee_reward      | 0.0136      |
+|    mimic_qpos_reward    | 0.275       |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 274         |
+|    iterations           | 8           |
+|    time_elapsed         | 119         |
+|    total_timesteps      | 32768       |
+| train/                  |             |
+|    approx_kl            | 0.006536468 |
+|    clip_fraction        | 0.00814     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -2.54e+03   |
+|    learning_rate        | 1e-05       |
+|    loss                 | 4.85        |
+|    n_updates            | 21          |
+|    policy_gradient_loss | -0.00504    |
+|    std                  | 0.2         |
+|    value_loss           | 10.5        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 22.2         |
+|    ep_reward_mean       | 9.59         |
+|    mimic_body_reward    | 0.0653       |
+|    mimic_body_vel_re... | 0.00815      |
+|    mimic_contact_reward | 0.052        |
+|    mimic_ee_reward      | 0.0112       |
+|    mimic_qpos_reward    | 0.266        |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 275          |
+|    iterations           | 9            |
+|    time_elapsed         | 133          |
+|    total_timesteps      | 36864        |
+| train/                  |              |
+|    approx_kl            | 0.0035503707 |
+|    clip_fraction        | 0.0092       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -1.75e+03    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 5.33         |
+|    n_updates            | 24           |
+|    policy_gradient_loss | -0.0059      |
+|    std                  | 0.2          |
+|    value_loss           | 10.9         |
+------------------------------------------

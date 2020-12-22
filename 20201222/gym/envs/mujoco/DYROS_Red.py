@@ -172,7 +172,7 @@ class DYROSRedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
             else:
                 mimic_contact_reward = 0.0
 
-        mimic_qpos_reward = 0.4 * exp(-2.0*(np.linalg.norm(target_data_qpos - qpos.flat[7:])**2))
+        mimic_qpos_reward = 0.4 * exp(-2.0*(np.linalg.norm((target_data_qpos - qpos.flat[7:])**2).mean()))
         mimic_qvel_reward = 0.00 * exp(-0.1*(np.linalg.norm(target_data_qvel - qvel.flat[6:])**2))
         mimic_ee_reward = 0.1 * exp(-40*(np.linalg.norm(EE_CoM - Tar_EE_COM.flatten())**2))
         mimic_body_reward = 0.2 * exp(-10*(np.linalg.norm(Tar_Body - qpos.flat[0:3])**2 + 0.5*baseQuatError**2)) 

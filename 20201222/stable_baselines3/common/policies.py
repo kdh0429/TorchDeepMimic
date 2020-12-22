@@ -365,7 +365,6 @@ class ActorCriticPolicy(BasePolicy):
         observation_space: gym.spaces.Space,
         action_space: gym.spaces.Space,
         lr_schedule: Callable[[float], float],
-        lr_schedule_critic: Callable[[float], float],
         net_arch: Optional[List[Union[int, Dict[str, List[int]]]]] = None,
         activation_fn: Type[nn.Module] = nn.ReLU,
         ortho_init: bool = True,
@@ -433,7 +432,7 @@ class ActorCriticPolicy(BasePolicy):
         # Action distribution
         self.action_dist = make_proba_distribution(action_space, use_sde=use_sde, dist_kwargs=dist_kwargs)
 
-        self._build(lr_schedule, lr_schedule_critic)
+        self._build(lr_schedule)
 
     def _get_data(self) -> Dict[str, Any]:
         data = super()._get_data()
@@ -481,7 +480,7 @@ class ActorCriticPolicy(BasePolicy):
             self.features_dim, net_arch=self.net_arch, activation_fn=self.activation_fn, device=self.device
         )
 
-    def _build(self, lr_schedule: Callable[[float], float], lr_schedule_critic: Callable[[float], float]) -> None:
+    def _build(self, lr_schedule: Callable[[float], float]) -> None:
         """
         Create the networks and the optimizer.
 
@@ -534,8 +533,7 @@ class ActorCriticPolicy(BasePolicy):
                 module.apply(partial(self.init_weights, gain=gain))
 
         # Setup optimizer with initial learning rate
-        self.optimizer = self.optimizer_class(self.action_net.parameters(), lr=lr_schedule(1), **self.optimizer_kwargs)
-        self.critic_optimizer = self.optimizer_class(self.value_net.parameters(), lr=lr_schedule_critic(1), **self.optimizer_kwargs)
+        self.optimizer = self.optimizer_class(self.parameters(), lr=lr_schedule(1), **self.optimizer_kwargs)
 
     def forward(self, obs: th.Tensor, deterministic: bool = False) -> Tuple[th.Tensor, th.Tensor, th.Tensor]:
         """

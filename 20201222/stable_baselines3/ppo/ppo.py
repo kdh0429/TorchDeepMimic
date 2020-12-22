@@ -69,7 +69,6 @@ class PPO(OnPolicyAlgorithm):
         policy: Union[str, Type[ActorCriticPolicy]],
         env: Union[GymEnv, str],
         learning_rate: Union[float, Callable] = 1e-5,
-        learning_rate_critic: Union[float, Callable] = 1e-2,
         n_steps: int = 512,
         batch_size: Optional[int] = 256,
         n_epochs: int = 3,
@@ -97,7 +96,6 @@ class PPO(OnPolicyAlgorithm):
             policy,
             env,
             learning_rate=learning_rate,
-            learning_rate_critic=learning_rate_critic,
             n_steps=n_steps,
             gamma=gamma,
             gae_lambda=gae_lambda,
@@ -147,7 +145,6 @@ class PPO(OnPolicyAlgorithm):
         """
         # Update optimizer learning rate
         self._update_learning_rate(self.policy.optimizer)
-        self._update_critic_learning_rate(self.policy.critic_optimizer)
         # Compute current clip range
         clip_range = self.clip_range(self._current_progress_remaining)
         # Optional: clip range for the value function
@@ -217,26 +214,26 @@ class PPO(OnPolicyAlgorithm):
                 loss = policy_loss + self.vf_coef * value_loss
 
                 # Optimization step
-                # Critic
-                self.policy.critic_optimizer.zero_grad()
-                value_loss.backward()
-                # Clip grad norm
-                th.nn.utils.clip_grad_norm_(self.policy.value_net.parameters(), self.max_grad_norm)
-                self.policy.critic_optimizer.step()
-
-                # Actor
-                self.policy.optimizer.zero_grad()
-                policy_loss.backward()
-                # Clip grad norm
-                th.nn.utils.clip_grad_norm_(self.policy.action_net.parameters(), self.max_grad_norm)
-                self.policy.optimizer.step()
-
-                # # Actor and Critic
-                # self.policy.optimizer.zero_grad()
-                # loss.backward()
+                # # Critic
+                # self.policy.critic_optimizer.zero_grad()
+                # value_loss.backward()
                 # # Clip grad norm
-                # th.nn.utils.clip_grad_norm_(self.policy.parameters(), self.max_grad_norm)
+                # th.nn.utils.clip_grad_norm_(self.policy.value_net.parameters(), self.max_grad_norm)
+                # self.policy.critic_optimizer.step()
+
+                # # Actor
+                # self.policy.optimizer.zero_grad()
+                # policy_loss.backward()
+                # # Clip grad norm
+                # th.nn.utils.clip_grad_norm_(self.policy.action_net.parameters(), self.max_grad_norm)
                 # self.policy.optimizer.step()
+
+                # Actor and Critic
+                self.policy.optimizer.zero_grad()
+                loss.backward()
+                # Clip grad norm
+                th.nn.utils.clip_grad_norm_(self.policy.parameters(), self.max_grad_norm)
+                self.policy.optimizer.step()
                 approx_kl_divs.append(th.mean(rollout_data.old_log_prob - log_prob).detach().cpu().numpy())
 
             all_kl_divs.append(np.mean(approx_kl_divs))

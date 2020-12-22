@@ -1,0 +1,61 @@
+2020-12-22 11:06:46,066 INFO    MainThread:16392 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-22 11:06:46,066 INFO    MainThread:16392 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-22 11:06:46,066 INFO    MainThread:16392 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-22 11:06:46,066 INFO    MainThread:16392 [wandb_init.py:_log_setup():303] Logging user logs to /home/kim/torch_mimic/wandb/run-20201222_110646-3swkt8on/logs/debug.log
+2020-12-22 11:06:46,066 INFO    MainThread:16392 [wandb_init.py:_log_setup():304] Logging internal logs to /home/kim/torch_mimic/wandb/run-20201222_110646-3swkt8on/logs/debug-internal.log
+2020-12-22 11:06:47,551 INFO    MainThread:16392 [wandb_run.py:_console_start():1237] atexit reg
+2020-12-22 11:06:47,551 INFO    MainThread:16392 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2020-12-22 11:06:47,553 INFO    MainThread:16392 [wandb_run.py:_redirect():1107] Redirecting console.
+2020-12-22 11:06:47,553 INFO    MainThread:16392 [redirect.py:install():204] install start
+2020-12-22 11:06:47,554 INFO    MainThread:16392 [redirect.py:install():219] install stop
+2020-12-22 11:06:47,554 INFO    MainThread:16392 [redirect.py:install():204] install start
+2020-12-22 11:06:47,554 INFO    MainThread:16392 [redirect.py:install():219] install stop
+2020-12-22 11:06:47,554 INFO    MainThread:16392 [wandb_run.py:_redirect():1151] Redirects installed.
+2020-12-22 11:06:47,612 INFO    MainThread:16392 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2020-12-22 11:06:47,613 INFO    MainThread:16392 [wandb_run.py:_restore():1179] restore
+2020-12-22 11:06:47,614 INFO    MainThread:16392 [redirect.py:uninstall():223] uninstall start
+2020-12-22 11:06:47,614 INFO    MainThread:16392 [redirect.py:_stop():278] _stop: stdout
+2020-12-22 11:06:47,619 INFO    MainThread:16392 [redirect.py:_stop():284] _stop closed: stdout
+2020-12-22 11:06:47,620 INFO    stdout    :16392 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2020-12-22 11:06:47,620 INFO    stdout    :16392 [redirect.py:_pipe_relay():136] relay done done: stdout
+2020-12-22 11:06:47,622 INFO    MainThread:16392 [redirect.py:_stop():290] _stop joined: stdout
+2020-12-22 11:06:47,623 INFO    MainThread:16392 [redirect.py:_stop():292] _stop rd closed: stdout
+2020-12-22 11:06:47,623 INFO    MainThread:16392 [redirect.py:uninstall():227] uninstall done
+2020-12-22 11:06:47,623 INFO    MainThread:16392 [redirect.py:uninstall():223] uninstall start
+2020-12-22 11:06:47,623 INFO    MainThread:16392 [redirect.py:_stop():278] _stop: stderr
+2020-12-22 11:06:47,623 INFO    MainThread:16392 [redirect.py:_stop():284] _stop closed: stderr
+2020-12-22 11:06:47,624 INFO    stderr    :16392 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2020-12-22 11:06:47,624 INFO    stderr    :16392 [redirect.py:_pipe_relay():136] relay done done: stderr
+2020-12-22 11:06:47,625 INFO    MainThread:16392 [redirect.py:_stop():290] _stop joined: stderr
+2020-12-22 11:06:47,625 INFO    MainThread:16392 [redirect.py:_stop():292] _stop rd closed: stderr
+2020-12-22 11:06:47,625 INFO    MainThread:16392 [redirect.py:uninstall():227] uninstall done
+2020-12-22 11:06:47,897 INFO    MainThread:16392 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "2e35a46b61174cd18638155668561f10"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      total_bytes: 730
+    }
+  }
+}
+
+2020-12-22 11:06:49,901 INFO    MainThread:16392 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "5b4b3ca3711b4a82ac4fa302f96329a0"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 3463
+      total_bytes: 3463
+    }
+  }
+}
+
+2020-12-22 11:06:51,006 INFO    MainThread:16392 [wandb_run.py:_show_files():1536] logging synced files
+2020-12-22 11:06:51,009 INFO    MainThread:16392 [internal.py:handle_exit():138] Internal process exited

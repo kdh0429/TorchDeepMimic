@@ -52,7 +52,6 @@ class OnPolicyAlgorithm(BaseAlgorithm):
         policy: Union[str, Type[ActorCriticPolicy]],
         env: Union[GymEnv, str],
         learning_rate: Union[float, Callable],
-        learning_rate_critic: Union[float, Callable],
         n_steps: int,
         gamma: float,
         gae_lambda: float,
@@ -76,7 +75,6 @@ class OnPolicyAlgorithm(BaseAlgorithm):
             env=env,
             policy_base=ActorCriticPolicy,
             learning_rate=learning_rate,
-            learning_rate_critic=learning_rate_critic,
             policy_kwargs=policy_kwargs,
             verbose=verbose,
             device=device,
@@ -116,7 +114,6 @@ class OnPolicyAlgorithm(BaseAlgorithm):
             self.observation_space,
             self.action_space,
             self.lr_schedule,
-            self.lr_schedule_critic,
             use_sde=self.use_sde,
             **self.policy_kwargs  # pytype:disable=not-instantiable
         )

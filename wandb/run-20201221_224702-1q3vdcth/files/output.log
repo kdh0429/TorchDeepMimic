@@ -89838,3 +89838,57 @@
 |    std                  | 0.2         |
 |    value_loss           | 7.17        |
 -----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 1.22e+03    |
+|    ep_reward_mean       | 463         |
+|    mimic_body_reward    | 0.115       |
+|    mimic_body_vel_re... | 0.0247      |
+|    mimic_contact_reward | 0.142       |
+|    mimic_ee_reward      | 0.0013      |
+|    mimic_qpos_reward    | 0.0813      |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 303         |
+|    iterations           | 3210        |
+|    time_elapsed         | 43380       |
+|    total_timesteps      | 13148160    |
+| train/                  |             |
+|    approx_kl            | 0.009986292 |
+|    clip_fraction        | 0.0634      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | 0.779       |
+|    learning_rate        | 1e-05       |
+|    loss                 | 3.05        |
+|    n_updates            | 9627        |
+|    policy_gradient_loss | -0.00983    |
+|    std                  | 0.2         |
+|    value_loss           | 6.98        |
+-----------------------------------------
+Traceback (most recent call last):
+  File "main.py", line 84, in <module>
+    main()
+  File "main.py", line 40, in main
+    model.learn(total_timesteps=60000000)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 315, in learn
+    n_eval_episodes=n_eval_episodes,
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 251, in learn
+    logger.record("time/total_timesteps", self.num_timesteps, exclude="tensorboard")
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 291, in train
+    wandb_dict["train/clip_fraction"] = np.mean(clip_fractions)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 809, in log
+    self.history._row_add(data)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_history.py", line 44, in _row_add
+    self._flush()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_history.py", line 59, in _flush
+    self._callback(row=self._data, step=self._step)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 598, in _history_callback
+    self._backend.interface.publish_history(row, step)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 178, in publish_history
+    self._publish_history(history)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 168, in _publish_history
+    self._publish(rec)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown

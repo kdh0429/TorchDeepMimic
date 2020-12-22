@@ -24,3 +24,51 @@ Traceback (most recent call last):
   File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
     raise Exception("The wandb backend process has shutdown")
 Exception: The wandb backend process has shutdown
+2020-12-22 10:50:07,268 INFO    MainThread:25807 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2020-12-22 10:50:07,269 INFO    MainThread:25807 [wandb_run.py:_restore():1179] restore
+2020-12-22 10:50:07,270 ERROR   stderr    :25807 [redirect.py:_pipe_relay():130] problem in pipe relay
+Traceback (most recent call last):
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/lib/redirect.py", line 128, in _pipe_relay
+    cb(name, data)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 602, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 151, in publish_output
+    self._publish_output(o)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 156, in _publish_output
+    self._publish(rec)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2020-12-22 10:50:07,270 INFO    MainThread:25807 [redirect.py:uninstall():223] uninstall start
+2020-12-22 10:50:07,270 INFO    MainThread:25807 [redirect.py:_stop():278] _stop: stdout
+2020-12-22 10:50:07,271 INFO    stdout    :25807 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:_stop():284] _stop closed: stdout
+2020-12-22 10:50:07,271 INFO    stdout    :25807 [redirect.py:_pipe_relay():136] relay done done: stdout
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:_stop():290] _stop joined: stdout
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:_stop():292] _stop rd closed: stdout
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:uninstall():227] uninstall done
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:uninstall():223] uninstall start
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:_stop():278] _stop: stderr
+2020-12-22 10:50:07,271 INFO    stderr    :25807 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:_stop():284] _stop closed: stderr
+2020-12-22 10:50:07,271 INFO    stderr    :25807 [redirect.py:_pipe_relay():136] relay done done: stderr
+2020-12-22 10:50:07,271 INFO    MainThread:25807 [redirect.py:_stop():290] _stop joined: stderr
+2020-12-22 10:50:07,272 INFO    MainThread:25807 [redirect.py:_stop():292] _stop rd closed: stderr
+2020-12-22 10:50:07,272 INFO    MainThread:25807 [redirect.py:uninstall():227] uninstall done
+2020-12-22 10:50:12,965 ERROR   MainThread:25807 [wandb_run.py:_atexit_cleanup():1225] Problem finishing run
+Traceback (most recent call last):
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1215, in _atexit_cleanup
+    self._on_finish()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1342, in _on_finish
+    self.history._flush()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_history.py", line 59, in _flush
+    self._callback(row=self._data, step=self._step)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 598, in _history_callback
+    self._backend.interface.publish_history(row, step)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 178, in publish_history
+    self._publish_history(history)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 168, in _publish_history
+    self._publish(rec)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 439, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown

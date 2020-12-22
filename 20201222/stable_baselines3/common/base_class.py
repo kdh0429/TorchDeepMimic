@@ -90,7 +90,6 @@ class BaseAlgorithm(ABC):
         env: Union[GymEnv, str, None],
         policy_base: Type[BasePolicy],
         learning_rate: Union[float, Callable],
-        learning_rate_critic: Union[float, Callable],
         policy_kwargs: Dict[str, Any] = None,
         tensorboard_log: Optional[str] = None,
         verbose: int = 0,
@@ -129,10 +128,8 @@ class BaseAlgorithm(ABC):
         self.start_time = None
         self.policy = None
         self.learning_rate = learning_rate
-        self.learning_rate_critic = learning_rate_critic
         self.tensorboard_log = tensorboard_log
         self.lr_schedule = None  # type: Optional[Callable]
-        self.lr_schedule_critic = None  # type: Optional[Callable]
         self._last_obs = None  # type: Optional[np.ndarray]
         self._last_dones = None  # type: Optional[np.ndarray]
         # When using VecNormalize:
@@ -212,7 +209,6 @@ class BaseAlgorithm(ABC):
     def _setup_lr_schedule(self) -> None:
         """Transform to callable if needed."""
         self.lr_schedule = get_schedule_fn(self.learning_rate)
-        self.lr_schedule_critic = get_schedule_fn(self.learning_rate_critic)
 
     def _update_current_progress_remaining(self, num_timesteps: int, total_timesteps: int) -> None:
         """
@@ -238,22 +234,6 @@ class BaseAlgorithm(ABC):
             optimizers = [optimizers]
         for optimizer in optimizers:
             update_learning_rate(optimizer, self.lr_schedule(self._current_progress_remaining))
-
-    def _update_critic_learning_rate(self, optimizers: Union[List[th.optim.Optimizer], th.optim.Optimizer]) -> None:
-        """
-        Update the optimizers learning rate using the current learning rate schedule
-        and the current progress remaining (from 1 to 0).
-
-        :param optimizers:
-            An optimizer or a list of optimizers.
-        """
-        # Log the current learning rate
-        logger.record("train/learning_rate_critic", self.lr_schedule_critic(self._current_progress_remaining))
-
-        if not isinstance(optimizers, list):
-            optimizers = [optimizers]
-        for optimizer in optimizers:
-            update_learning_rate(optimizer, self.lr_schedule_critic(self._current_progress_remaining))
 
     def _excluded_save_params(self) -> List[str]:
         """
