@@ -1,0 +1,33 @@
+2020-12-23 14:12:57,566 INFO    MainThread:31660 [internal.py:wandb_internal():63] W&B internal server running at pid: 31660
+2020-12-23 14:12:57,570 INFO    WriterThread:31660 [datastore.py:open_for_write():76] open: /home/kim/torch_mimic/wandb/run-20201223_141256-2b2yvb75/run-2b2yvb75.wandb
+2020-12-23 14:12:57,570 DEBUG   SenderThread:31660 [sender.py:send():90] send: header
+2020-12-23 14:12:57,570 DEBUG   HandlerThread:31660 [handler.py:handle_request():55] handle_request: check_version
+2020-12-23 14:12:57,570 DEBUG   SenderThread:31660 [sender.py:send():90] send: request
+2020-12-23 14:12:57,570 DEBUG   SenderThread:31660 [sender.py:send_request():99] send_request: check_version
+2020-12-23 14:12:57,576 DEBUG   Thread-4  :31660 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-23 14:12:57,829 DEBUG   Thread-4  :31660 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-23 14:12:57,892 DEBUG   SenderThread:31660 [sender.py:send():90] send: run
+2020-12-23 14:12:57,895 DEBUG   SenderThread:31660 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/kim/torch_mimic, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-23 14:12:57,908 DEBUG   SenderThread:31660 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-23 14:12:58,104 WARNING MainThread:31660 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2020-12-23 14:12:58,292 DEBUG   SenderThread:31660 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-23 14:12:58,297 INFO    SenderThread:31660 [dir_watcher.py:__init__():165] watching files in: /home/kim/torch_mimic/wandb/run-20201223_141256-2b2yvb75/files
+2020-12-23 14:12:58,297 INFO    SenderThread:31660 [sender.py:_start_run_threads():490] run started: 2b2yvb75 with start time 1608700376
+2020-12-23 14:12:58,320 WARNING MainThread:31660 [internal.py:wandb_internal():117] Internal process interrupt: 2
+2020-12-23 14:12:58,320 ERROR   MainThread:31660 [internal.py:wandb_internal():120] Internal process interrupted.
+2020-12-23 14:12:58,893 INFO    HandlerThread:31660 [handler.py:finish():271] shutting down handler
+2020-12-23 14:12:58,897 INFO    WriterThread:31660 [datastore.py:close():257] close: /home/kim/torch_mimic/wandb/run-20201223_141256-2b2yvb75/run-2b2yvb75.wandb
+2020-12-23 14:12:59,297 INFO    SenderThread:31660 [sender.py:finish():642] shutting down sender
+2020-12-23 14:12:59,298 INFO    SenderThread:31660 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-12-23 14:13:00,298 INFO    SenderThread:31660 [dir_watcher.py:finish():309] scan: /home/kim/torch_mimic/wandb/run-20201223_141256-2b2yvb75/files
+2020-12-23 14:13:00,298 INFO    SenderThread:31660 [dir_watcher.py:finish():315] scan save: /home/kim/torch_mimic/wandb/run-20201223_141256-2b2yvb75/files/config.yaml config.yaml
+2020-12-23 14:13:00,308 INFO    SenderThread:31660 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-23 14:13:00,308 INFO    SenderThread:31660 [file_pusher.py:join():174] waiting for file pusher
+2020-12-23 14:13:00,314 DEBUG   Thread-10 :31660 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-23 14:13:00,839 DEBUG   Thread-10 :31660 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-23 14:13:00,846 DEBUG   Thread-10 :31660 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-23 14:13:01,377 DEBUG   Thread-10 :31660 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/DeepMimicTorch/2b2yvb75/config.yaml?Expires=1608786780&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=QMUMzMKauZ6%2FZGSjrBCwD5Wchfj5LL4PVwgVNUdq39g9P030fSBnQUam5MmnizEikfJL4tDu9sIFmQ%2F713ZuBqxf6iNFy7AnVCPj6xtePTrV85NRqCbUmAhUHQIBOnU0uy9RdGmCeXuBmzDEjKY5ZuH9MO9cER5%2FqCNLdLaTKNJ9%2BuZsIId%2BQ4qviMtLoBV9w%2FfQt96404L1X1x7rWAScv13klgSIqc4vhbsLlgwPza2ZXvhCwkoDdXbESk8pf7Ze8pZgJ4z0F9zPftsm2fZtcgZKtcGG%2B4MhB22%2Fg%2F13oPBwA9YHPkgEwBTIc4Enh7wv8CJqEJ29p%2BS%2FiGUiwS94w%3D%3D HTTP/1.1" 200 0
+2020-12-23 14:13:01,379 INFO    Thread-10 :31660 [upload_job.py:push():131] Uploaded file /home/kim/torch_mimic/wandb/run-20201223_141256-2b2yvb75/files/config.yaml
+2020-12-23 14:13:01,813 DEBUG   Thread-5  :31660 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-23 14:13:02,163 DEBUG   Thread-5  :31660 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/kdh93429/DeepMimicTorch/2b2yvb75/file_stream HTTP/1.1" 200 None
+2020-12-23 14:13:02,165 INFO    MainThread:31660 [internal.py:handle_exit():138] Internal process exited

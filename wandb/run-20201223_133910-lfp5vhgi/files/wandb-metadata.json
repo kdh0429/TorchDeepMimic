@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.15.0-126-generic-x86_64-with-debian-stretch-sid",
+    "python": "3.6.12",
+    "heartbeatAt": "2020-12-23T04:39:11.667042",
+    "startedAt": "2020-12-23T04:39:10.442402",
+    "docker": null,
+    "gpu": "GeForce RTX 2080",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "test.py",
+    "program": "test.py",
+    "git": {
+        "remote": "https://github.com/kdh0429/TorchDeepMimic.git",
+        "commit": "26f7e6fd872d133bdf892ef22a77545116e2603a"
+    },
+    "email": "kdh0429@snu.ac.kr",
+    "root": "/home/kim/torch_mimic",
+    "host": "kim-desktop",
+    "username": "kim",
+    "executable": "/home/kim/anaconda3/envs/torch_rl_test/bin/python"
+}
