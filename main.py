@@ -45,6 +45,8 @@ def main():
    del model # remove to demonstrate saving and loading
    del env
 
+   # file_name = "ppo2_DYROSRed_2020-12-24 06:55:43.271030"
+   
    env = gym.make('DYROSRed-v1')
    env = DummyVecEnv([lambda: env])
    env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=False)
@@ -66,10 +68,10 @@ def main():
    #                            -3.14/2, -3.14/2, -3.14/2, -3.14,\
    #                            -3.14/2, -3.14/2, -3.14/2, -3.14])
    while True:
-      action, _states = model.predict(obs)
+      action, _states = model.predict(obs, deterministic=True)
       # clipped_action = np.clip(action, action_low, action_high)
 
-      obs, rewards, dones, info = env.step(clipped_action)
+      obs, rewards, dones, info = env.step(action)
       env.render()
       epi_reward += rewards      
       

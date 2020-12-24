@@ -69,7 +69,7 @@ def main():
       action, _states = model.predict(obs)
       # clipped_action = np.clip(action, action_low, action_high)
 
-      obs, rewards, dones, info = env.step(clipped_action)
+      obs, rewards, dones, info = env.step(action, deterministic=True)
       env.render()
       epi_reward += rewards      
       
