@@ -8,27 +8,27 @@ import datetime
 import torch as th
 
 def main():
-   # # multiprocess environment
-   # n_cpu = 8
-   # env = SubprocVecEnv([lambda: gym.make('DYROSRed-v1') for i in range(n_cpu)])
-   # env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
+   # multiprocess environment
+   n_cpu = 8
+   env = SubprocVecEnv([lambda: gym.make('DYROSRed-v1') for i in range(n_cpu)])
+   env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
 
-   # # n_cpu = 1   
-   # # env = gym.make('DYROSRed-v1')
-   # # env = DummyVecEnv([lambda: env])
-   # # env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
+   n_cpu = 1   
+   env = gym.make('DYROSRed-v1')
+   env = DummyVecEnv([lambda: env])
+   env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
 
-   # model = PPO('MlpPolicy', env, verbose=1, n_steps=int(4096/n_cpu), wandb_use=True)
-   # model.learn(total_timesteps=60000000)
-   # file_name = "ppo2_DYROSRed_" + str(datetime.datetime.now())
-   # model.save(file_name)
-   # env.save(file_name+"_env.pkl")
+   model = PPO('MlpPolicy', env, verbose=1, n_steps=int(4096/n_cpu), wandb_use=False)
+   model.learn(total_timesteps=60000000)
+   file_name = "ppo2_DYROSRed_" + str(datetime.datetime.now())
+   model.save(file_name)
+   env.save(file_name+"_env.pkl")
 
-   # del model # remove to demonstrate saving and loading
-   # del env
+   del model # remove to demonstrate saving and loading
+   del env
 
-   file_name = "ppo2_DYROSRed_2020-12-25 03:58:53.805515"
-   
+   # file_name = "ppo2_DYROSRed_2020-12-27 18:36:35.077451"
+
    env = gym.make('DYROSRed-v1')
    env = DummyVecEnv([lambda: env])
    env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=False)
