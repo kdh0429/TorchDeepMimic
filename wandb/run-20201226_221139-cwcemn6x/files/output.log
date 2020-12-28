@@ -1,0 +1,170 @@
+--------------------------------------
+| rollout/                |          |
+|    mimic_body_reward    | 0.242    |
+|    mimic_body_vel_re... | 0.0897   |
+|    mimic_contact_reward | 0.136    |
+|    mimic_ee_reward      | 0        |
+|    mimic_qpos_reward    | 0.45     |
+|    mimic_qvel_reward    | 0        |
+| time/                   |          |
+|    fps                  | 325      |
+|    iterations           | 1        |
+|    time_elapsed         | 12       |
+|    total_timesteps      | 4096     |
+--------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    mimic_body_reward    | 0.242        |
+|    mimic_body_vel_re... | 0.0928       |
+|    mimic_contact_reward | 0.134        |
+|    mimic_ee_reward      | 0            |
+|    mimic_qpos_reward    | 0.45         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 336          |
+|    iterations           | 2            |
+|    time_elapsed         | 24           |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0042860885 |
+|    clip_fraction        | 0.0282       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -4.84e+05    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 114          |
+|    n_updates            | 3            |
+|    policy_gradient_loss | -0.00713     |
+|    std                  | 0.2          |
+|    value_loss           | 229          |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    mimic_body_reward    | 0.242        |
+|    mimic_body_vel_re... | 0.0913       |
+|    mimic_contact_reward | 0.128        |
+|    mimic_ee_reward      | 0            |
+|    mimic_qpos_reward    | 0.45         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 345          |
+|    iterations           | 3            |
+|    time_elapsed         | 35           |
+|    total_timesteps      | 12288        |
+| train/                  |              |
+|    approx_kl            | 0.0051625846 |
+|    clip_fraction        | 0.0108       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -2.1e+05     |
+|    learning_rate        | 1e-05        |
+|    loss                 | 110          |
+|    n_updates            | 6            |
+|    policy_gradient_loss | -0.00528     |
+|    std                  | 0.2          |
+|    value_loss           | 221          |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    mimic_body_reward    | 0.243        |
+|    mimic_body_vel_re... | 0.0939       |
+|    mimic_contact_reward | 0.146        |
+|    mimic_ee_reward      | 0            |
+|    mimic_qpos_reward    | 0.45         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 346          |
+|    iterations           | 4            |
+|    time_elapsed         | 47           |
+|    total_timesteps      | 16384        |
+| train/                  |              |
+|    approx_kl            | 0.0072851265 |
+|    clip_fraction        | 0.0212       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -3.69e+04    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 115          |
+|    n_updates            | 9            |
+|    policy_gradient_loss | -0.00679     |
+|    std                  | 0.2          |
+|    value_loss           | 224          |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    mimic_body_reward    | 0.242       |
+|    mimic_body_vel_re... | 0.0916      |
+|    mimic_contact_reward | 0.146       |
+|    mimic_ee_reward      | 0           |
+|    mimic_qpos_reward    | 0.45        |
+|    mimic_qvel_reward    | 0           |
+| time/                   |             |
+|    fps                  | 345         |
+|    iterations           | 5           |
+|    time_elapsed         | 59          |
+|    total_timesteps      | 20480       |
+| train/                  |             |
+|    approx_kl            | 0.006515457 |
+|    clip_fraction        | 0.0113      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 4.38        |
+|    explained_variance   | -2.75e+04   |
+|    learning_rate        | 1e-05       |
+|    loss                 | 107         |
+|    n_updates            | 12          |
+|    policy_gradient_loss | -0.00551    |
+|    std                  | 0.2         |
+|    value_loss           | 214         |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    mimic_body_reward    | 0.242        |
+|    mimic_body_vel_re... | 0.0838       |
+|    mimic_contact_reward | 0.136        |
+|    mimic_ee_reward      | 0            |
+|    mimic_qpos_reward    | 0.45         |
+|    mimic_qvel_reward    | 0            |
+| time/                   |              |
+|    fps                  | 346          |
+|    iterations           | 6            |
+|    time_elapsed         | 70           |
+|    total_timesteps      | 24576        |
+| train/                  |              |
+|    approx_kl            | 0.0011509801 |
+|    clip_fraction        | 0.0026       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 4.38         |
+|    explained_variance   | -9.34e+03    |
+|    learning_rate        | 1e-05        |
+|    loss                 | 116          |
+|    n_updates            | 15           |
+|    policy_gradient_loss | -0.00439     |
+|    std                  | 0.2          |
+|    value_loss           | 231          |
+------------------------------------------
+Traceback (most recent call last):
+  File "main.py", line 74, in <module>
+    main()
+  File "main.py", line 40, in main
+    model.learn(total_timesteps=60000000)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/ppo/ppo.py", line 315, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 222, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 162, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 150, in step
+    return self.step_wait()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/vec_normalize.py", line 113, in step_wait
+    obs, rews, news, infos = self.venv.step_wait()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 115, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 115, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/kim/anaconda3/envs/torch_rl/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt

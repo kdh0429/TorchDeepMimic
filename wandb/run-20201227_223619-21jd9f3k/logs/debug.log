@@ -1,0 +1,13 @@
+2020-12-27 22:36:19,097 INFO    MainThread:13525 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-27 22:36:19,097 INFO    MainThread:13525 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-27 22:36:19,097 INFO    MainThread:13525 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-27 22:36:19,097 INFO    MainThread:13525 [wandb_init.py:_log_setup():303] Logging user logs to /home/kim/torch_mimic/wandb/run-20201227_223619-21jd9f3k/logs/debug.log
+2020-12-27 22:36:19,097 INFO    MainThread:13525 [wandb_init.py:_log_setup():304] Logging internal logs to /home/kim/torch_mimic/wandb/run-20201227_223619-21jd9f3k/logs/debug-internal.log
+2020-12-27 22:36:20,249 INFO    MainThread:13525 [wandb_run.py:_console_start():1237] atexit reg
+2020-12-27 22:36:20,250 INFO    MainThread:13525 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2020-12-27 22:36:20,251 INFO    MainThread:13525 [wandb_run.py:_redirect():1107] Redirecting console.
+2020-12-27 22:36:20,251 INFO    MainThread:13525 [redirect.py:install():204] install start
+2020-12-27 22:36:20,251 INFO    MainThread:13525 [redirect.py:install():219] install stop
+2020-12-27 22:36:20,251 INFO    MainThread:13525 [redirect.py:install():204] install start
+2020-12-27 22:36:20,252 INFO    MainThread:13525 [redirect.py:install():219] install stop
+2020-12-27 22:36:20,252 INFO    MainThread:13525 [wandb_run.py:_redirect():1151] Redirects installed.

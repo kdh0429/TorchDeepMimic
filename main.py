@@ -37,7 +37,7 @@ def main():
    # env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
 
    model = PPO('MlpPolicy', env, verbose=1, n_steps=int(4096/n_cpu), wandb_use=True)
-   model.learn(total_timesteps=60000000)
+   model.learn(total_timesteps=30000000)
    file_name = "ppo2_DYROSRed_" + str(datetime.datetime.now())
    model.save(file_name)
    env.save(file_name+"_env.pkl")
@@ -45,7 +45,7 @@ def main():
    del model # remove to demonstrate saving and loading
    del env
 
-   # file_name = "ppo2_DYROSRed_2020-12-24 06:55:43.271030"
+   # file_name = "ppo2_DYROSRed_2020-12-26 01:19:07.069881"
    
    env = gym.make('DYROSRed-v1')
    env = DummyVecEnv([lambda: env])
@@ -58,29 +58,17 @@ def main():
    obs =  np.copy(env.reset())
    epi_reward = 0
 
-   # action_high = np.array([3.14/2, 3.14/2, 3.14/2, 2.62, 3.14/2, 3.14/2, \
-   #  3.14/2, 3.14/2, 3.14/2, 2.62, 3.14/2, 3.14/2, 3.14/2, 3.14/2, 3.14/2,\
-   #                            3.14/2, 3.14/2, 3.14/2, 0.0,\
-   #                            3.14/2, 3.14/2, 3.14/2, 0.0])
-   # action_low = np.array([-3.14/2, -3.14/2, -3.14/2, 0.0, -3.14/2, -3.14/2,\
-   #                            -3.14/2, -3.14/2, -3.14/2, 0.0, -3.14/2, -3.14/2,\
-   #                            -3.14/2, -3.14/2, -3.14/2,\
-   #                            -3.14/2, -3.14/2, -3.14/2, -3.14,\
-   #                            -3.14/2, -3.14/2, -3.14/2, -3.14])
    while True:
       action, _states = model.predict(obs, deterministic=True)
-      # clipped_action = np.clip(action, action_low, action_high)
 
       obs, rewards, dones, info = env.step(action)
       env.render()
       epi_reward += rewards      
       
       if dones:
-         obs[:] = env.reset()
          print("Episode Reward: ", epi_reward)
          epi_reward = 0
 
-      # print("obs: ", obs)
 
 if __name__ == '__main__':
     main()
