@@ -19,22 +19,31 @@ def main():
    # env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
 
    model = PPO('MlpPolicy', env, verbose=1, n_steps=int(4096/n_cpu), wandb_use=True)
-   model.learn(total_timesteps=30000000)
+   model.learn(total_timesteps=40000000)
    file_name = "ppo2_DYROSTocabi_" + str(datetime.datetime.now())
    model.save(file_name)
    env.save(file_name+"_env.pkl")
 
+   model.policy.to("cpu")
+   for name, param in model.policy.state_dict().items():
+      weight_file_name = "./result/" + name + ".txt"
+      np.savetxt(weight_file_name, param.data)
+
+   np.savetxt("./result/obs_mean.txt", env.obs_rms.mean)
+   np.savetxt("./result/obs_variance.txt", env.obs_rms.var)
+
    del model # remove to demonstrate saving and loading
    del env
 
-   # file_name = "ppo2_DYROSTocabi_2021-01-01 18:12:25.060108"
+   # file_name = "ppo2_DYROSTocabi_2021-01-08 07:18:00.267089"
 
    env = gym.make('DYROSTocabi-v1')
    env = DummyVecEnv([lambda: env])
-   env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=False)
-   env = env.load(file_name+"_env.pkl", env)
+   env = VecNormalize.load(file_name+"_env.pkl", env)
+   env.training = False
 
    model = PPO.load(file_name, env=env, wandb_use=False)
+
 
    #Enjoy trained agent
    obs =  np.copy(env.reset())
@@ -50,7 +59,6 @@ def main():
       if dones:
          print("Episode Reward: ", epi_reward)
          epi_reward = 0
-      env.render()
       
 if __name__ == '__main__':
     main()
