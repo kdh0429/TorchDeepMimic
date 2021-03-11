@@ -41,23 +41,38 @@ data_quat2joint(:,20) = right_ankle(:,2);
 data_quat2joint(:,21:23) = eulerd(quaternion(data(:,9:12)),'YZX','frame');
 data_quat2joint(:,22) = -data_quat2joint(:,22);
 
+% neck rotation(Redundant)
+data_quat2joint(:,24) = 0.0;
+data_quat2joint(:,25) = 0.0;
 
 % left shoulder rotation
-data_quat2joint(:,24:26) = eulerd(quaternion(data(:,40:43)),'YZX','frame');
-data_quat2joint(:,25) = -data_quat2joint(:,25);
-data_quat2joint(:,26) = 90;
+data_quat2joint(:,26:28) = eulerd(quaternion(data(:,40:43)),'YZX','frame');
+data_quat2joint(:,27) = -data_quat2joint(:,27);
+data_quat2joint(:,28) = 90;
+% left armlink joint(Redundant)
+data_quat2joint(:,29) = -90.0;
 % left elbow roatation
-data_quat2joint(:,27) = -data(:,44)*Rad2Deg;
+data_quat2joint(:,30) = -data(:,44)*Rad2Deg;
+% left forearm and wrist joint(Redundant)
+data_quat2joint(:,31) = 0.0;
+data_quat2joint(:,32) = 0.0;
+data_quat2joint(:,33) = 0.0;
 
 % right shoulder rotation
-data_quat2joint(:,28:30) = eulerd(quaternion(data(:,26:29)),'YZX','frame');
-data_quat2joint(:,29) = data_quat2joint(:,29);
-data_quat2joint(:,30) = -90;
+data_quat2joint(:,34:36) = eulerd(quaternion(data(:,26:29)),'YZX','frame');
+data_quat2joint(:,35) = data_quat2joint(:,35);
+data_quat2joint(:,36) = -90;
+% right armlink joint(Redundant)
+data_quat2joint(:,37) = 90.0;
 % right elbow roatation
-data_quat2joint(:,31) = data(:,30)*Rad2Deg;
+data_quat2joint(:,38) = data(:,30)*Rad2Deg;
+% right forearm and wrist joint(Redundant)
+data_quat2joint(:,39) = 0.0;
+data_quat2joint(:,40) = 0.0;
+data_quat2joint(:,41) = 0.0;
 
 
-data_quat2joint(:,9:31) = data_quat2joint(:,9:31)*Deg2Rad;
+data_quat2joint(:,9:41) = data_quat2joint(:,9:41)*Deg2Rad;
 
 
 save('processed_data_tocabi.txt', 'data_quat2joint', '-ascii', '-double', '-tabs')

@@ -37,7 +37,7 @@ def main():
    del model # remove to demonstrate saving and loading
    del env
 
-   # file_name = "ppo2_DYROSTocabi_2021-01-26 12:50:06.938082"
+   # file_name = "ppo2_DYROSTocabi_2021-02-27 02:20:20.015346"
 
    env = gym.make('DYROSTocabi-v1')
    env = DummyVecEnv([lambda: env])

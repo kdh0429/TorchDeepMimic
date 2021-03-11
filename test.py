@@ -9,16 +9,16 @@ import torch as th
 
 def main():
    # multiprocess environment
-   n_cpu = 8
-   env = SubprocVecEnv([lambda: gym.make('DYROSTocabi-v1') for i in range(n_cpu)])
-   env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
-
-   # n_cpu = 1   
-   # env = gym.make('DYROSTocabi-v1')
-   # env = DummyVecEnv([lambda: env])
+   # n_cpu = 8
+   # env = SubprocVecEnv([lambda: gym.make('DYROSTocabi-v1') for i in range(n_cpu)])
    # env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
 
-   model = PPO('MlpPolicy', env, verbose=1, n_steps=int(4096/n_cpu), wandb_use=True)
+   n_cpu = 1   
+   env = gym.make('DYROSTocabi-v1')
+   env = DummyVecEnv([lambda: env])
+   env = VecNormalize(env, norm_obs=True, clip_obs=2.0, norm_reward=False, training=True)
+
+   model = PPO('MlpPolicy', env, verbose=1, n_steps=int(4096/n_cpu), wandb_use=False)
    model.learn(total_timesteps=40000000)
    file_name = "ppo2_DYROSTocabi_" + str(datetime.datetime.now())
    model.save(file_name)
